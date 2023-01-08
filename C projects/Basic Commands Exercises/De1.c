@@ -9,10 +9,12 @@ int main() {
 		scanf("%d",&n);
         if (n >= 1 && n <= 60) break; else printf ("ban nhap sai\n");
     }
-    
+    	
     printf("\nnhap so thiet bi can gia cong: "); scanf("%d",&m);
+	
     printf("Tong thoi gian may gia cong cho n thiet bi la: %d", m*n);
     
+	//Dieu kien tinh chi phi gia cong
     if (n <= 30) printf("\ntong chi phi cho m thiet bi la: %d", 800*m);
     else printf ("\ntong chi phi cho m thiet bi la: %d", 900*m);
 }
