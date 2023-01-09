@@ -21,7 +21,7 @@ int main() {
 	for (int row=0; row<m; row++) {
 		printf("| ");
 		for (int column=0; column<n; column++) {
-			printf("%d ",array[row][column]);
+			printf("%10d ",array[row][column]);
 			if (array[row][column]<min) min=array[row][column];
 		}
 		printf("|\n");
@@ -33,7 +33,7 @@ int main() {
 		for (int column=0; column<n; column++) 
 		{
 			if (array[row][column]%5==0 && array[row][column]<0) {
-				printf("\narray[%d][%d]=%d2",m,n,array[row][column]);
+				printf("\narray[%d][%d]=%d",m,n,array[row][column]);
 				count++;
 			}
 		}	

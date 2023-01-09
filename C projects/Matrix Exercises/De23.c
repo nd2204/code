@@ -18,7 +18,7 @@ int main() {
 		printf("| ");
 		for (int column=0; column<n; column++) 
 		{
-			printf("%d ",array[row][column]);
+			printf("%10d ",array[row][column]);
 			if (array[row][column]>max) max=array[row][column];
 			if (row==column) sum+=array[row][column];
 		}
