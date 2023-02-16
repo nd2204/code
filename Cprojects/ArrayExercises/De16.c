@@ -11,13 +11,10 @@ int main() {
 	for (int i=0; i<n; i++) {printf("\nGia tri thu %d trong mang la: %.2f",i,array[i]);}
 	
 	for (int i=0; i<n; i++) { 
-	
-	
 	//Bubble sorting algorithm
 	//vong lap de so sanh tung phan tu
 		for (int j=0; j<n-i; j++) {
 			if (array[j]<array[j+1]) {
-				
 				//doi cho 2 phan tu cho nhau khi gia tri cua phan tu truoc < phan tu sau
 				temp=array[j];
 				array[j]=array[j+1];

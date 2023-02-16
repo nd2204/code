@@ -23,4 +23,5 @@ int main(){
 	
 	totalIncome = initialIncome + overtimeIncome;
 	printf("\nTong thu nhap cua cong nhan do la: %d", totalIncome);
+	printf("\n");
 }

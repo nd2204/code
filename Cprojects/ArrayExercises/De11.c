@@ -2,7 +2,7 @@
 
 int main(){
 	int n,i;
-	int array[50];
+	int array[n];
 	
 	printf("nhap so luong phan tu cua mang: ");
 	scanf("%d",&n);
@@ -26,4 +26,5 @@ int main(){
 		}
 	}
 	printf("\nSo lon nhat trong mang la: %d",max);
+	printf("\n");
 }

@@ -2,7 +2,7 @@
 
 int main(){
 	int n;
-	int count=0,sumDiv5=0,sumDiv3=0;
+	int count=0,sumDiv10=0,sumDiv3=0;
 	
 	do {
 		printf("nhap n: ");
@@ -14,10 +14,10 @@ int main(){
 		if (i%2!=0) {printf("%d ",i);}
 		if (i%3==0) {sumDiv3+=i;}
 		if (i%10==0) {
-			sumDiv5+=i;
+			sumDiv10+=i;
 			count++;
 		}
 	}
 	printf("\ntong cac so chia het cho 3 trong khoang 1 -> %d la: %d",n,sumDiv3);
-	printf("\ntrung binh cong cac so chan chia het cho 5 trong khoang 1 -> %d la: %d",n,sumDiv5/count);
+	printf("\ntrung binh cong cac so chan chia het cho 5 trong khoang 1 -> %d la: %.2f",n,(float)sumDiv10/count);
 }
