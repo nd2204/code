@@ -33,7 +33,7 @@ int main() {
 
   if (m>1) {
 	  do {
-		  printf("Nhap K (Vi tri cua cot trong ma tran) (0<K<=%d): ",m); scanf("%d",&k);
+		  printf("Nhap K (Vi tri cua cot trong ma tran) (0<=K<=%d): ",m); scanf("%d",&k);
 	  } while (k>m || k<=0);
   } else k=1;
 
