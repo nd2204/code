@@ -20,3 +20,4 @@ int main() {
 
     printf("\nTong chi phi cho m thiet bi la: %d", chiphi);
 }
+
