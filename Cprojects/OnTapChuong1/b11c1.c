@@ -24,13 +24,14 @@ int main() {
     if (a>b) temp=b;
     else temp=a;
 
-    for (int i=1; i<=temp; i++) {
-      if (a%i==(int)a%i && b%i==(int)b%i && a%i==b%i) {
+    for (int i=a; i>0; i--) {
+      if (a%i==0 && b%i==0) {
         ucln=i;
+        break;
       }
     }
     bcnn = (a*b)/ucln;
-  }
+ }
   printf("\nUCLN(a,b) = %d",ucln);
   printf("\nBCNN(a,b) = %d",bcnn);
 }
