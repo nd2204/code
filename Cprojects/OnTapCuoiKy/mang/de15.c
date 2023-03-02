@@ -38,7 +38,3 @@ int main() {
     printf("%6d",a[i]);
   }
 }
-
-
-
-
