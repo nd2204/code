@@ -31,7 +31,7 @@ int main() {
   int k;
   int tbc=0;
   do {
-    printf("Nhap cot: "); scanf("%d",&k);
+    printf("Nhap cot (0<K<=%d): ",n); scanf("%d",&k);
   } while (k<=0 || k>n);
 
   for (int i=0; i<m; i++) {
