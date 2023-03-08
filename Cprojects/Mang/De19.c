@@ -4,7 +4,6 @@ int main() {
 	int n;
 	int array[50];
 	int sum=0;
-
 	printf("Nhap so phan tu cho mang: "); scanf("%d", &n);
 
 	for (int i=0; i<n; i++) {

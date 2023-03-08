@@ -1,8 +1,10 @@
-#include "stdio.h"
+#include <stdio.h>
 
 int main() {
   int n;
-  printf("Nhap n: "); scanf("%d",&n);
+  do {
+    printf("Nhap n: "); scanf("%d",&n);
+  } while (n<2 || n>5);
   int a[n][n];
 
   printf("Ma tran %dx%d\n",n,n);
@@ -20,18 +22,12 @@ int main() {
     printf("\n");
   }
 
-  printf("Phan tu chan co trong ma tran la: ");
+  int k, dem=0;
+  do {
+    printf("Nhap k (1<=k<=%d): ",n); scanf("%d",&k);
+  } while (k>n || k<1);
   for (int i=0; i<n; i++) {
-    for (int j=0; j<n; j++) {
-      if (a[i][j]%2==0) printf("%6d",a[i][j]);
-    }
+    if(a[k-1][i]>0) dem++;
   }
-
-  int tong=a[0][0];
-  for (int i=1; i<n; i++) {
-    for (int j=1; j<n; i++) {
-      if (i==j) tong+=a[i][j];
-    }
-  }
-  printf("\nTong cac phan tu thuoc duong cheo chinh: %d",tong);
+  printf("So cac so duong tren hang k cua ma tran la: %d",dem);
 }
