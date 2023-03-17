@@ -33,24 +33,32 @@ WCC = x86_64-w64-mingw32-gcc
 CC = gcc
 CFLAGS =-std=c99 -lm
 
+#COLOR
+YELLOW=\033[0;33m
+GREEN=\033[0;32m
+NC=\033[0m
+
 # thu muc chua file nguon
 SRC= $(wildcard src/*.c)
 EXECUTABLE = bin/chuongtrinh
 
-all: linux win
+all: linux run
 
 win: cuoiky.c
-	@echo "Bien dich cho Window..."
-	$(WCC) cuoiky.c $(CFLAGS) -o $(EXECUTABLE).exe
+	@echo "$(YELLOW)Dang bien dich cho Window...$(NC)"
+	@$(WCC) cuoiky.c $(CFLAGS) -o $(EXECUTABLE).exe
+	@echo "$(GREEN)XONG$(NC)"
 linux: cuoiky.c
-	@echo "Dang bien dich cho Linux/Unix..."
-	$(CC) cuoiky.c $(CFLAGS) -o $(EXECUTABLE)
+	@echo "$(YELLOW)Dang bien dich cho Linux/Unix...$(NC)"
+	@$(CC) cuoiky.c $(CFLAGS) -o $(EXECUTABLE)
+	@echo "$(GREEN)XONG$(NC)"
 
 run:
-	./$(EXECUTABLE)
+	@./$(EXECUTABLE)
 runexe:
-	./$(EXECUTABLE).exe
+	@./$(EXECUTABLE).exe
 
 clean:
-	@echo "Dang xoa file ..."
+	@echo "$(YELLOW)Dang xoa file ...$(NC)"
 	@rm -f $(EXECUTABLE) $(EXECUTABLE).exe
+	@echo "$(GREEN)XONG$(NC)"

@@ -26,6 +26,3 @@ int main() {
 	printf("\nMang da duoc sap xep theo thu tu giam dan la: ");
 	for (int i=0; i<n; i++) {printf("%.2f ",array[i]);}
 }
-	
-	
-
