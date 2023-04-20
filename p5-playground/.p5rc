@@ -1,0 +1,7 @@
+{
+  "name": "p5-playground",
+  "projects": [
+    "test",
+    "ProgrammingWithP5js"
+  ]
+}
