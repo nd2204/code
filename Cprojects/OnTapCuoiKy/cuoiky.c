@@ -24,12 +24,13 @@ void cvdtTamGiac() {
 
 void canBac2n() {
     float n;
-    printf("Nhap n: "); scanf("%f",&n);
-    while (n>1.01) {
-        n=sqrt(n);
-        printf("%.2f",n);
+    printf("Nhap n: "); scanf("%f", &n);
+    while (n > 1.01) {
+        n = sqrt(n);
+        printf("%.2f", n);
     }
 }
+
 
 void chuyenSangInHoa() {
     char ch;

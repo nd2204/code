@@ -1,27 +1,49 @@
-var speed = 1;
-var obj_width = 20;
-var obj_height = 20;
-var x = 0;
-var y = 0;
-var foo = 0;
+let ball = [];
+let count = 0;
+
+function createBall() {
+    let x = random(windowWidth)
+    let y = random(windowHeight)
+    let radius = random(50,100)
+    let b = new Ball( x, y, radius)
+    ball.push(b)
+}
 
 function setup() {
-    createCanvas(windowWidth, windowHeight);
+    createCanvas(windowWidth, windowHeight)
+    textSize(20)
+    textAlign(CENTER, CENTER)
+    for (let i = 0 ; i < 10; i++) {
+        let x = random(windowWidth)
+        let y = random(windowHeight)
+        let radius = random(10,100)
+        ball[i] = new Ball( x, y, radius);
+    }
+}
+
+function mousePressed() {
+    for (i = 0; i < ball.length; i++) {
+        if (ball[i].contain( mouseX, mouseY)) {
+            ball.splice(i,1)
+            createBall()
+            count +=1
+        }
+    }
 }
 
 function draw() {
-    background(12, 13, 22);
-    for (let i = 0; i < windowHeight; i += obj_height) {
-        rect(x, y + i, obj_width, obj_height);
-        if (y >= windowHeight / 2) {
-            foo = windowWidth - (i + obj_width);
+    background(21,22,23)
+    for (let elem of ball) {
+        elem.show();
+        elem.randomWalk()
+        if (elem.contain(mouseX,mouseY)) {
+            elem.changeColor(9,20)
         } else {
-            foo += obj_width;
+            elem.changeColor(9,0)
         }
-        x = windowWidth - foo;
+        // elem.reset();
     }
-    if (obj_width >= windowWidth - 20 || obj_width < 0) {
-        speed *= -1;
-    }
-    obj_width += speed;
+    fill(255)
+    noStroke()
+    text(count, 20, 20);
 }
