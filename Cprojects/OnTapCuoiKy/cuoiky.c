@@ -31,7 +31,6 @@ void canBac2n() {
     }
 }
 
-
 void chuyenSangInHoa() {
     char ch;
     do {
@@ -41,7 +40,7 @@ void chuyenSangInHoa() {
 }
 
 void sochinhphuong (int a) {
-    if (sqrt(a)==(int)sqrt(a)) {
+    if ( sqrt(a) == (int)sqrt(a) ) {
         printf("a la so chinh phuong");
     }
     else printf("a khong phai la so chinh phuong");
@@ -254,7 +253,7 @@ void hePT() {
     DetY = a*f-c*d;
 
     if (Det == 0) {
-        if (DetX+DetY == 0) {
+        if ( DetX + DetY == 0 ) {
             printf("He phuong trinh co vo so nghiem"); 
         } else printf("He phuong trinh vo ngiem");
     } else {
