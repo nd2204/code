@@ -1,0 +1,396 @@
+// Bài số 3
+// Viết chương trình dưới dạng hàm thực hiện các chức năng sau:
+// 1. Nhập một mảng số thực một chiều gồm n phần tử vào bộ nhớ động.
+// 2. Hiển thị dãy vừa nhập ra màn hình trên một hàng.
+// 3. Tính trung bình cộng các số dương trong mảng.
+// 4. Sắp xếp mảng tăng dần. In mảng sau khi sắp xếp ra màn hình.
+// 5. Ghi vào tệp D:/data.txt những phần tử nhỏ hơn 10 trong mảng.
+// Chương trình chính gọi thực hiện các hàm trên.
+// 
+// Bài số 4
+// Viết chương trình dưới dạng hàm thực hiện các chức năng sau:
+// 1. Nhập một mảng số nguyên một chiều gồm n phần tử vào bộ nhớ động.
+// 2. Hiển thị dãy vừa nhập ra màn hình trên một hàng.
+// 3. Hiển thị các số nguyên tố có trong mảng.
+// 4. Nhập một số x từ bàn phím, kiểm tra xem x có trong mảng không?
+// 5. Ghi vào tệp daysochan.txt những phần tử chẵn của dãy. Đọc dữ liệu từ tệp ra
+// màn hình.
+// Chương trình chính gọi thực hiện các hàm trên.
+// 
+// Bài số 5
+// Viết chương trình dưới dạng hàm thực hiện các chức năng sau:
+// 1. Nhập một mảng số nguyên một chiều gồm n phần tử vào bộ nhớ động.
+// 2. Hiển thị dãy vừa nhập ra màn hình trên một hàng.
+// 3. Tính trung bình cộng các phần tử trong đoạn x và y. Với x và y nhập từ bàn phím.
+// 4. Tìm giá trị lớn nhất trong dãy.
+// 5. Ghi vào tệp mangduong.txt những phần tử dương của mảng. Đọc dữ liệu từ tệp ra màn
+// hình.
+// Viết chương trình chính gọi thực hiện các hàm trên.
+// 
+// Bài số 6
+// Viết chương trình dưới dạng hàm thực hiện các chức năng sau:
+// 1. Nhập một mảng số nguyên một chiều gồm n phần tử vào bộ nhớ động.
+// 2. Hiển thị dãy vừa nhập ra màn hình trên một hàng.
+// 3. Kiểm tra trong dãy có hai số dương bằng nhau mà cạnh nhau hay không. Đưa thông báo ra màn hình.
+// 4. Sắp xếp giá trị của dãy theo chiều giảm dần.
+// 5. Ghi vào tệp mangduong.txt những phần tử dương của mảng. Đọc dữ liệu từ tệp ra màn
+// hình.
+// Chương trình chính gọi thực hiện các hàm trên.
+// 
+// Bài số 7
+// Viết chương trình dưới dạng hàm thực hiện các chức năng sau:
+// 1. Nhập một mảng số nguyên một chiều gồm n phần tử vào bộ nhớ động.
+// 2. Hiển thị dãy vừa nhập ra màn hình trên một hàng.
+// 3. In ra các phần tử chia hết cho 3 và nhỏ hơn 50 ra màn hình.
+// 4. Nhập số nguyên x và k. Thêm phần tử x vào vị trí thứ k trong mảng.
+// 5. Ghi vào tệp daysoam.txt các phần tử âm của dãy. Đọc dữ liệu từ tệp ra màn hình.
+// Viết chương trình chính gọi thực hiện các hàm trên.
+// 
+// Bài số 8
+// Viết chương trình dưới dạng hàm thực hiện các chức năng sau:
+// 1. Nhập một mảng số nguyên một chiều gồm n phần tử vào bộ nhớ động.
+// 2. Hiển thị dãy vừa nhập ra màn hình trên một hàng.
+// 3. Tính trung bình cộng các số âm trong mảng.
+// 4. Sắp xếp mảng tăng dần. In mảng sau khi sắp xếp ra màn hình.
+// 5. Ghi vào tệp D:/data.txt những phần tử lẻ trong mảng.
+// Chương trình chính gọi thực hiện các hàm trên.
+// 
+// Bài số 9.
+// Viết chương trình dưới dạng hàm thực hiện các chức năng sau:
+// 1. Nhập một mảng số nguyên một chiều gồm n phần tử vào bộ nhớ động.
+// 2. Hiển thị dãy vừa nhập ra màn hình trên một hàng.
+// 3. Tính tổng các phần tử âm và lẻ trong mảng
+// 4. Sắp xếp mảng tăng dần.
+// 5. Ghi vào tệp mangnguyen.txt những phần tử lẻ của mảng. Đọc dữ liệu từ tệp ra màn hình.
+// Viết chương trình chính gọi thực hiện các hàm trên.
+// 
+// Bài số 10.
+// Viết chương trình dưới dạng hàm thực hiện các chức năng sau:
+// 1. Nhập một mảng số thực một chiều gồm n phần tử vào bộ nhớ động.
+// 2. Hiển thị dãy vừa nhập ra màn hình trên một cột.
+// 3. Tìm vị trí các phần tử âm nhỏ nhất trong mảng
+// 4. Sắp xếp mảng giảm dần.
+// 5. Ghi vào tệp mangduong.txt những phần tử dương của mảng. Đọc dữ liệu từ tệp ra màn
+// hình.
+// Chương trình chính gọi thực hiện các hàm trên.
+// 
+// Bài số 11
+// Viết chương trình dưới dạng hàm thực hiện các chức năng sau:
+// 1. Nhập một mảng số nguyên một chiều gồm n phần tử vào bộ nhớ động.
+// 2. Hiển thị dãy vừa nhập ra màn hình trên một hàng.
+// 3. Xóa phần tử âm có trong mảng.
+// 5. Ghi vào tệp daysoam.txt các phần tử âm của dãy. Đọc dữ liệu từ tệp ra màn hình.
+// Viết chương trình chính gọi thực hiện các hàm trên.
+// 
+// BÀI TẬP MA TRẬN
+// 
+// BÀI SỐ 1.
+// Viết chương trình dưới dạng hàm thực hiện các chức năng sau:
+// 1. Nhập ma trận gồm mxn phần tử có kiểu nguyên vào bộ nhớ động.
+// 2. Hiển thị ma trận vừa nhập ra màn hình theo dạng bảng.
+// 3. Tính trung bình cộng các phần tử lẻ của ma trận
+// 4. Tìm giá trị lớn nhất trên cột 1 của ma trận. In giá trị và vị trí của phần tử lớn nhất đó ra màn hình.
+// 5. Ghi vào tệp matran.txt các phần tử trong ma trận có giá trị nhỏ hơn 100. Đọc dữ liệu từ tệp ra màn hình.
+// Chương trình chính gọi thực hiện các hàm trên
+// 
+// BÀI SỐ 2.
+// Viết chương trình dưới dạng hàm thực hiện các chức năng sau:
+// 1. Nhập ma trận gồm mxn phần tử có kiểu thực vào bộ nhớ động.
+// 2. Hiển thị ma trận vừa nhập ra màn hình theo dạng bảng.
+// 3. Tính tổng các phần tử của ma trận. In kết quả tính được ra màn hình.
+// 4. Tìm giá trị lớn nhất trên hàng 0 của ma trận. In giá trị lớn nhất đó ra màn hình.
+// 5. Ghi vào tệp matran.txt các phần tử trong ma trận
+// Viết chương trình chính gọi thực hiện các hàm trên.
+// 
+// BÀI SỐ 3.
+// Viết chương trình dưới dạng hàm thực hiện các chức năng sau:
+// 1. Nhập ma trận gồm mxn phần tử có kiểu thực vào bộ nhớ động.
+// 2. Hiển thị ma trận vừa nhập ra màn hình theo dạng bảng.
+// 3. Tính tổng các phần tử thuộc các hàng của ma trận. In kết quả tính được ra màn hình.
+// 4. Tìm giá trị nhỏ nhất trên cột 1 của ma trận. In giá trị nhỏ nhất đó ra màn hình.
+// 5. Ghi vào tệp matran.txt các phần tử dương trong ma trận
+// Chương trình chính gọi thực hiện các hàm trên
+// 
+// BÀI SỐ 4.
+// Viết chương trình dưới dạng hàm thực hiện các chức năng sau:
+// 1. Nhập ma trận gồm mxn phần tử có kiểu thực vào bộ nhớ động.
+// 2. Hiển thị ma trận vừa nhập ra màn hình theo dạng bảng.
+// 3. Đếm các số dương trong ma trận
+// 4. Đếm các số âm trong ma trận.
+// 5. Nhập số nguyên k. Sắp xếp hàng k của ma trận theo thứ tự tăng dần
+// 6. Ghi vào tệp matran.txt các phần tử trong ma trận theo dạng bảng.
+// Chương trình chính gọi thực hiện các hàm trên
+// 
+// BÀI SỐ 5.
+// Viết chương trình dưới dạng hàm thực hiện các chức năng sau:
+// 1. Nhập ma trận vuông gồm nxn phần tử có kiểu thực vào bộ nhớ động.
+// 2. Hiển thị ma trận vừa nhập ra màn hình theo dạng bảng.
+// 3. Tính tổng các phần tử trên đường chéo chính của ma trận. In kết quả tính được ra màn hình.
+// 4. Sắp xếp theo chiều giảm dần các giá trị trên cột 0 của ma trận.
+// 5. Ghi vào tệp matran.txt các phần tử trong ma trận theo dạng bảng.
+// Viết chương trình chính gọi thực hiện các hàm trên.
+// 
+// BÀI SỐ 6.
+// Viết chương trình dưới dạng hàm thực hiện các chức năng sau:
+// 1. Nhập ma trận gồm mxn phần tử có kiểu thực vào bộ nhớ động.
+// 2. Hiển thị ma trận vừa nhập ra màn hình theo dạng bảng.
+// 3. Tính tổng các phần tử của ma trận. In kết quả tính được ra màn hình.
+// 4. Tìm giá trị nhỏ nhất trên hàng 0 của ma trận. In giá trị nhỏ nhất đó ra màn hình.
+// 5. Ghi vào tệp matran.txt các phần tử trong ma trận
+// Viết chương trình chính gọi thực hiện các hàm trên.
+// 
+// BÀI SỐ 7.
+// Viết chương trình dưới dạng hàm thực hiện các chức năng sau:
+// 1. Nhập ma trận gồm mxn phần tử có kiểu thực vào bộ nhớ động.
+// 2. Hiển thị ma trận vừa nhập ra màn hình theo dạng bảng.
+// 3. Tính tổng các phần tử của ma trận. In kết quả tính được ra màn hình.
+// 4. Tìm giá trị lớn nhất trên cột 0 của ma trận. In giá trị lớn nhất đó ra màn hình.
+// 5. Ghi vào tệp matran.txt các phần tử trong ma trận
+// Viết chương trình chính gọi thực hiện các hàm trên.
+// 
+// BÀI SỐ 8.
+// Viết chương trình dưới dạng hàm thực hiện các chức năng sau:
+// 1. Nhập ma trận vuông gồm nxn phần tử có kiểu thực vào bộ nhớ động.
+// 2. Hiển thị ma trận vừa nhập ra màn hình theo dạng bảng.
+// 3. Hiển thị ra màn hình các phần tử trên đường chéo chính của ma trận.
+// 4. Sắp xếp theo chiều giảm dần các giá trị trên cột cuối cùng của ma trận.
+// 5. Ghi vào tệp matran.txt các phần tử trong ma trận theo dạng bảng.
+// Viết chương trình chính gọi thực hiện các hàm trên.
+// 
+// BÀI SỐ 9.
+// Viết chương trình dưới dạng hàm thực hiện các chức năng sau:
+// 1. Nhập ma trận gồm mxn phần tử có kiểu thực vào bộ nhớ động.
+// 2. Hiển thị ma trận vừa nhập ra màn hình theo dạng bảng.
+// 3. Tính trung bình cộng các phần tử của ma trận. In kết quả tính được ra màn hình.
+// 4. Nhập vào một số x, kiểm tra x có trong ma trận không. Nếu có in ra vị trí hàng và cột của ma trận.
+// 5. Ghi vào tệp D:/matran.txt các phần tử trong ma trận.
+// Viết chương trình chính gọi thực hiện các hàm trên.
+// 
+// BÀI SỐ 10.
+// Viết chương trình dưới dạng hàm thực hiện các chức năng sau:
+// 1. Nhập ma trận gồm mxn phần tử có kiểu thực vào bộ nhớ động.
+// 2. Hiển thị ma trận vừa nhập ra màn hình theo dạng bảng.
+// 3. Hiển thị ra màn hình vị trí các phần tử có giá trị bằng 0
+// 4. Nhập h từ bàn phím. Tính trung bình cộng các giá trị trên cột h.
+// 5. Ghi vào tệp D:/matran.txt hàng cuối cùng của ma trận
+// Viết chương trình chính gọi thực hiện các hàm trên.
+// 
+// BÀI SỐ 11.
+// Viết chương trình dưới dạng hàm thực hiện các chức năng sau:
+// 1. Nhập ma trận gồm mxn phần tử có kiểu thực vào bộ nhớ động.
+// 2. Hiển thị ma trận vừa nhập ra màn hình theo dạng bảng.
+// 3. Tính tổng các phần tử của ma trận. In kết quả tính được ra màn hình.
+// 4. Tìm giá trị lớn nhất trên hàng 1 của ma trận. In giá trị lớn nhất đó ra màn hình.
+// 5. Ghi vào tệp matran.txt các phần tử trong ma trận có giá trị nhỏ hơn 100. Đọc dữ liệu từ tệp ra màn hình.
+// Chương trình chính gọi thực hiện các hàm trên
+// 
+// BÀI SỐ 12.
+// Viết chương trình dưới dạng hàm thực hiện các chức năng sau:
+// 1. Nhập ma trận vuông gồm nxn phần tử có kiểu nguyên vào bộ nhớ động.
+// 2. Hiển thị ma trận vừa nhập ra màn hình theo dạng bảng.
+// 3. Tính tổng các phần tử trên đường chéo chính của ma trận. In kết quả tính được ra màn hình.
+// 4. Nhập h từ bàn phím. Tính tổng các phần tử trên cột h vừa nhập.
+// 5. Ghi vào tệp matran.txt các phần tử chẵn trong ma trận theo dạng bảng.
+// Viết chương trình chính gọi thực hiện các hàm trên.
+// 
+// BÀI SỐ 13.
+// Viết chương trình dưới dạng hàm thực hiện các chức năng sau:
+// 1. Nhập ma trận vuông gồm nxn phần tử có kiểu thực vào bộ nhớ động.
+// 2. Hiển thị ma trận vừa nhập ra màn hình theo dạng bảng.
+// 3. Tính tổng các phần tử trên đường chéo chính của ma trận. In kết quả tính được ra màn hình.
+// 4. Sắp xếp theo chiều giảm dần các giá trị trên cột 0 của ma trận.
+// 5. Ghi vào tệp D:/matran.txt các phần tử trong ma trận theo dạng bảng.
+// 
+// BÀI SỐ 14.
+// Viết chương trình dưới dạng hàm thực hiện các chức năng sau:
+// 1. Nhập ma trận gồm mxn phần tử có kiểu nguyên vào bộ nhớ động.
+// 2. Hiển thị ma trận vừa nhập ra màn hình theo dạng bảng.
+// 3. Tính trung bình cộng các phần tử lẻ của ma trận
+// 4. Tìm giá trị lẻ lớn nhất trên cột 0 của ma trận.
+// 5.Tìm giá trị âm lớn nhất trên hàng 1 của ma trận.
+// 6. Ghi vào tệp matrannguyen.txt các phần tử trong ma trận.
+// 
+// BÀI TẬP PHẦN CẤU TRÚC
+// 
+// BÀI 1
+// Định nghĩa cấu trúc máy tính bao gồm các thông tin: mã máy(kiểu xâu kí tự), tên máy (kiểu xâu kí tự), năm sản xuất(kiểu nguyên), hãng sản xuất (kiểu xâu ký tự), giá nhập (kiểu float).
+// Xây dựng các hàm thực hiện các chức năng sau:
+// 1. Nhập vào danh sách gồm thông tin của n máy tính vào bộ nhớ động.
+// 2. Hiển thị danh sách gồm n máy tính ra màn hình. Mỗi máy tính trên một dòng.
+// 3. In ra màn hình danh sách các máy tính của nhà sản xuất SAMSUNG strcmp().
+// 4. In ra màn hình danh sách các máy tính có năm sản xuất 2019.
+// 5. Ghi vào file D:/maytinh.txt thông tin máy tính có giá &gt;2000. Thông tin mỗi máy tính trên một dòng.
+// Chương trình chính gọi thực hiện các hàm trên.
+// 
+// BÀI 2
+// Định nghĩa cấu trúc thí sinh bao gồm các thông tin: mã thí sinh(kiểu xâu kí tự), họ
+// tên thí sinh (kiểu xâu kí tự), điểm toán(kiểu số thực), điểm anh(kiểu số thực),
+// điểm văn(kiểu số thực).
+// Xây dựng các hàm thực hiện các chức năng sau:
+// 1. Nhập vào danh sách gồm n thí sinh với đầy đủ các thông tin được mô tả như trên
+// vào bộ nhớ động.
+// 2. Hiển thị danh sách gồm n thí sinh ra màn hình cùng với tổng điểm, cho biết tổng
+// điểm=điểm toán+điểm anh+điểm văn. Mỗi thí sinh trên một dòng.
+// 3. Hiển thị đầy đủ thông tin những thí sinh có điểm toán &gt;=8.
+// 4. Nhập số thực x từ bàn phím. Đưa ra màn hình danh sách những thí sinh có điểm
+// tổng kết = x vừa nhập .
+// 5. Ghi vào file “D:/thisinh.txt” thông tin của danh sách n thí sinh. Thông tin mỗi thí sinh
+// trên một dòng.
+// Chương trình chính gọi thực hiện các hàm trên.
+// 
+// BÀI 3
+// Định nghĩa cấu trúc khách hàng là các hộ gia đình dùng điện. Mỗi hộ khách hàng gồm các thông tin sau: số điện thoại khách hàng (kiểu xâu kí tự), họ tên khách hàng (kiểu xâu kí tự), địa chỉ (kiểu xâu kí tự), số điện tiêu thụ (kiểu số).
+// Xây dựng các hàm thực hiện các chức năng sau:
+// 1. Nhập vào danh sách gồm n khách hàng dùng điện vào bộ nhớ động.
+// 2. Hiển thị danh sách n khách hàng ra màn hình. Thông tin mỗi khách hàng trên một dòng.
+// 3. In ra màn hình danh sách khách hàng có địa chỉ ở CG.
+// 4. Nhập vào số điện thoại khách hàng, in ra màn hình thông tin của khách hàng đó.
+// 5. Ghi vào file doanhnghiep.txt thông tin khách hàng có số điện tiêu thụ lớn hơn 500.
+// Chương trình chính gọi thực hiện các hàm trên.
+// 
+// BÀI 4
+// Định nghĩa cấu trúc sinh viên gồm các thông tin sau: mã sinh viên, họ tên sinh viên,
+// năm sinh, lớp, điểm tổng kết.
+// Xây dựng các hàm thực hiện các chức năng sau:
+// 1. Nhập vào danh sách gồm n sinh viên vào bộ nhớ động.
+// 2. Hiển thị danh sách gồm n sinh viên ra màn hình. Mỗi sinh viên trên một dòng.
+// 3.Hiển thị ra màn hình thông tin sinh viên có điểm tổng kết lớn hơn 4.
+// 4. In ra màn hình những sinh viên lớp D15CNTT7
+// 5. Ghi vào file D:/dulieu.txt thông tin sinh viên có năm sinh 2000.
+// Viết chương trình chính gọi thực hiện các hàm trên.
+// 
+// BÀI 5
+// Định nghĩa cấu trúc nhân viên bao gồm các thông tin: mã nhân viên(kiểu xâu kí tự), họ
+// tên
+// (kiểu xâu kí tự), năm sinh(kiểu nguyên), hệ số lương (kiểu thực) .Xây dựng các hàm
+// thực hiện các chức năng sau:
+// 1. Nhập vào danh sách gồm n nhân viên vào bộ nhớ động.
+// 2. Hiển thị danh sách gồm n nhân viên ra màn hình. Mỗi nhân viên trên một dòng.
+// 3. In ra màn hình danh sách nhân viên cùng với lương (lương =hệ số lương *1950)
+// 4. In ra màn hình thông tin nhân viên có mã nv001.
+// 5. Ghi vào file D:/ nhanvien.txt thông tin nhân viên có lương nhỏ hơn 5000. Thông tin
+// mỗi
+// nhân viên trên một dòng.
+// Chương trình chính gọi thực hiện các hàm trên.
+// 
+// BÀI 6
+// Định nghĩa cấu trúc thí sinh bao gồm các thông tin: Số báo danh(kiểu xâu kí tự), họ
+// tên(kiểu xâu kí tự), năm sinh (kiểu nguyên), quê quán (kiểu xâu kí tự), tổng điểm (kiểu
+// số thực).
+// Xây dựng các hàm thực hiện các chức năng sau:
+// 1. Nhập vào danh sách gồm n thí sinh vào bộ nhớ động.
+// 2. Hiển thị danh sách gồm n thí sinh ra màn hình. Mỗi thí sinh trên một dòng.
+// 3. In ra màn hình danh sách các thí sinh quê “Hà Nội”.
+// 4. In ra màn hình danh sách các thí sinh có năm sinh 2002.
+// 5. Ghi vào file D:/thisinh.txt thông tin thí sinh có tổng điểm &gt;=20. Thông tin mỗi thí sinh
+// trên một dòng.
+// Chương trình chính gọi thực hiện các hàm trên
+// 
+// Bài 7
+// Định nghĩa cấu trúc máy tính bao gồm các thông tin: hãng sản xuất (kiểu ký tự), số
+// seri(kiểu ký tự), giá tiền (float). Xây dựng các hàm thực hiện các chức năng sau:
+// 1. Nhập từ bàn phím thông tin của n máy tính vào bộ nhớ động.
+// 2. Hiển thị thông tin của n máy tính ra màn hình. Mỗi nhân viên trên một dòng.
+// 3. Hiển thị màn hình đầy đủ thông tin các máy tính của hang sản xuất SAMSUNG.
+// 4. Nhập vào số seri máy tính bất kỳ từ bàn phím. Đưa ra màn hình thông tin của
+// máy tính có số seri vừa nhập.
+// 5. Ghi vào file D:/maytinh.txt thông tin của những máy tính có giá &gt;2000. Thông tin mỗi
+// máy tính trên một dòng.
+// Chương trình chính gọi thực hiện các hàm trên.
+// 
+// BÀI 8
+// Định nghĩa cấu trúc sinh viên gồm các thông tin sau: mã sinh viên(kiểu xâu ký tự), họ
+// tên sinh viên(kiểu xâu ký tự), năm sinh(kiểu số nguyên), điểm tổng kết(kiểu số thực).
+// Xây dựng các hàm thực hiện các chức năng sau:
+// 1. Nhập vào từ bàn phím thông tin của n sinh viên vào bộ nhớ động.
+// 2. Hiển thị thông tin danh sách n sinh viên ra màn hình. Mỗi sinh viên trên một dòng.
+// 3. Sắp xếp danh sách sinh viên theo điểm tổng kết giảm dần.
+// 4. In mã sinh viên, họ tên của các sinh viên có năm sinh 2000.
+// 5. Ghi vào file D:/dulieu.txt thông tin những sinh viên có điểm tổng kết nhỏ hơn 5.
+// Viết chương trình chính gọi thực hiện các hàm trên.
+// 
+// BÀI 9
+// Viết chương trình dưới dạng hàm thực hiện các chức năng sau:
+// Định nghĩa kiểu cấu trúc Sach bao gồm các thông tin: mã sách(kiểu xâu ký tự), tên
+// sách(kiểu xâu ký tự), năm xuất bản(kiểu số nguyên), nhà xuất bản(kiểu xâu ký tự), giá
+// bán(kiểu số)).
+// 1. Nhập vào danh sách gồm n cuốn sách vào bộ nhớ động.
+// 2. Hiển thị đầy đủ thông tin của n cuốn sách ra màn hình. Mỗi cuốn sách trên một dòng.
+// 3. Liệt kê ra màn hình tất cả những cuốn sách của nhà xuất bản “KHKT”.
+// 4. Nhập vào một năm, in ra màn hình tên tất cả những cuốn sách xuất bản năm
+// vừa nhập.
+// 5. Ghi vào file D:/sach.txt thông tin cuốn sách có giá bán lớn hơn 200.
+// Viết chương trình chính gọi thực hiện các hàm trên.
+// 
+// BÀI 10
+// Định nghĩa cấu trúc sinh viên gồm các thông tin sau: mã sinh viên, họ tên sinh viên,
+// điểm tổng kết.
+// Xây dựng các hàm thực hiện các chức năng sau:
+// 1. Nhập từ bàn phím thông tin cho n sinh viên vào bộ nhớ động.
+// 2. Hiển thị danh sách gồm n sinh viên ra màn hình. Mỗi sinh viên trên một dòng.
+// 3. Nhập vào một mã sinh viên, tìm xem sinh viên đó có trong danh sách không,
+// nếu có in ra màn hình thông tin sinh viên đó.
+// 4. Tính tổng điểm của n sinh viên trong danh sách.
+// 5. Ghi vào file D:/dulieu.txt thông tin của những sinh viên có điểm &gt;=8.5
+// Viết chương trình chính gọi thực hiện các hàm trên.
+// 
+// BÀI 11
+// Viết chương trình dưới dạng hàm thực hiện các chức năng sau:
+// Định nghĩa kiểu cấu trúc Sach bao gồm các thông tin: mã sách(kiểu xâu ký tự), tên
+// sách(kiểu xâu ký tự), năm xuất bản(kiểu số nguyên), nhà xuất bản(kiểu xâu ký tự), giá
+// bán(kiểu số)).
+// 1. Nhập vào danh sách gồm n cuốn sách vào bộ nhớ động.
+// 2. Hiển thị đầy đủ thông tin của n cuốn sách ra màn hình. Mỗi cuốn sách trên một dòng.
+// 3. Liệt kê ra màn hình tất cả những cuốn sách của nhà xuất bản “LTC”.
+// 4. In ra màn hình tên tất cả những cuốn sách xuất bản năm 2000 trở về trước.
+// 5. Ghi vào file D:/sach.txt thông tin cuốn sách có giá bán nhỏ hơn 200.
+// Viết chương trình chính gọi thực hiện các hàm trên.
+// 
+// BÀI 12
+// Định nghĩa cấu trúc khách hàng là các hộ gia đình dùng điện. Mỗi hộ khách hàng gồm
+// các
+// thông tin sau: mã khách hàng (kiểu xâu kí tự), họ tên khách hàng (kiểu xâu kí tự), địa
+// chỉ (kiểu xâu kí tự), số điện tiêu thụ (kiểu số).
+// Xây dựng các hàm thực hiện các chức năng sau:
+// 1. Nhập thông tin của n khách hàng dùng điện vào bộ nhớ động.
+// 2. Hiển thị danh sách n khách hàng ra màn hình. Thông tin mỗi khách hàng trên một
+// dòng.
+// 3. In ra màn hình thông tin của khách hàng có mã “KH02”.
+// 4. Sắp xếp danh sách theo chiều giảm dần số điện tiêu thụ.
+// 5. Ghi vào file D:/sodien.txt thông tin khách hàng có số điện tiêu thụ lớn hơn 500.
+// Chương trình chính gọi thực hiện các hàm trên.
+// 
+// BÀI 13
+// Định nghĩa cấu trúc sinh viên gồm các thông tin sau: mã sinh viên(kiểu xâu ký tự), họ
+// tên sinh viên(kiểu xâu ký tự), năm sinh(kiểu số nguyên), lớp (kiểu số nguyên), điểm
+// tổng kết(kiểu số thực). Xây dựng các hàm thực hiện các chức năng sau:
+// 1. Nhập từ bàn phím thông tin cho n sinh viên vào bộ nhớ động.
+// 2. Hiển thị danh sách gồm n sinh viên ra màn hình. Mỗi sinh viên trên một dòng.
+// 3. Đếm số sinh viên có điểm tổng kết nhỏ hơn 5.
+// 4. Tìm kiếm trong danh sách có sinh viên có mã số “sv01” không? Hiển thị thông báo ra
+// màn hình.
+// 5. Ghi vào file D:/dulieu.txt thông tin của những sinh viên có năm sinh 2002.
+// Viết chương trình chính gọi thực hiện các hàm trên.
+// 
+// BÀI 14
+// Định nghĩa cấu trúc sinh viên gồm các thông tin sau: mã sinh viên, họ tên sinh viên,
+// điểm tổng kết.
+// Xây dựng các hàm thực hiện các chức năng sau:
+// 1. Nhập từ bàn phím thông tin cho n sinh viên vào bộ nhớ động.
+// 2. Hiển thị danh sách gồm n sinh viên ra màn hình. Mỗi sinh viên trên một dòng.
+// 3. Nhập vào một mã sinh viên, tìm xem sinh viên đó có trong danh sách không, nếu có
+// in ra màn hình thông tin sinh viên đó.
+// 4. Tính tổng điểm của n sinh viên trong danh sách.
+// 5. Ghi vào file D:/dulieu.txt thông tin của những sinh viên có điểm &gt;=8.5
+// Viết chương trình chính gọi thực hiện các hàm trên.
+// 
+// BÀI SỐ 15
+// Định nghĩa cấu trúc nhân viên bao gồm các thông tin: mã nhân viên(kiểu xâu kí tự), họ tên (kiểu xâu kí tự), ngày sinh (kiểu ngày/tháng/năm), quê quán (kiểu xâu kí tự), lương (kiểu số).
+// Xây dựng các hàm thực hiện các chức năng sau:
+// 1. Nhập danh sách gồm n nhân viên vào bộ nhớ động.
+// 2. Hiển thị danh sách gồm n nhân viên ra màn hình. Mỗi nhân viên trên một dòng.
+// 3. Nhập vào một tháng sinh bất kỳ. Đưa ra màn hình họ tên những nhân viên có tháng
+// sinh đó.
+// 4. In ra màn hình thông tin nhân viên có mã NV0120.
+// 5. Ghi vào file trocap.txt thông tin nhân viên có lương nhỏ hơn 500. Thông tin mỗi nhân
+// viên trên một dòng.
