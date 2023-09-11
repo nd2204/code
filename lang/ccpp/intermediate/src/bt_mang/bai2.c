@@ -9,7 +9,6 @@
 
 #include "helper.h"
 #include "baitap.h"
-#include <stdio.h>
 
 static void print_equal_adjacent_negative(float array[], const int size);
 static float average_first_x(float array[], const int size);
@@ -36,9 +35,10 @@ static void file_write_positive(float array[], const int size) {
         return;
     }
 
+    fprintf(file, "Các giá trị dương trong mảng là:\n");
     for (int i = 0; i < size; i++) {
         if (array[i] > 0) {
-            fputc(array[i], file); 
+            fprintf(file, "%.2f ", array[i]);
         }
     }
 
@@ -62,7 +62,7 @@ static float average_first_x(float array[], const int size) {
 } 
 
 static void print_equal_adjacent_negative(float array[], const int size) {
-    int buffer[size];
+    float buffer[size];
     int index = 0;
     for (int i = 0; i < size - 1; i++) {
         if ((array[i] < 0) && (array[i] == array[i+1])) {
@@ -77,7 +77,8 @@ static void print_equal_adjacent_negative(float array[], const int size) {
     }
     printf("\nCác số âm có phần tử nằm cạnh nó bằng nhau trong mảng là: ");
     for (int i = 0; i < index; i++) {
-        printf("%d ", buffer[i]);
+        printf("%f ", buffer[i]);
     }
+    printf("\n");
 }
 

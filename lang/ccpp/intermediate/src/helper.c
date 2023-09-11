@@ -28,6 +28,7 @@ static void draw_title(const char title[]) {
     /* int width = get_terminal_width(); */
     int length = strlen(title);
     int width = 100;
+    printf("\n");
     for (int i = 0; i < width / 2 - length / 2 - 1; i++) {
         printf("=");
     }
@@ -125,8 +126,8 @@ void initIntArray(int arr[], const int size) {
 void initFloatArray(float arr[], const int size) {
     for (int i = 0; i < size; i++) {
         printf("Nhap gia tri phan tu thu %d: ", i+1);
-        /* arr[i] = getf(""); */
-        arr[i] = randFloat(10);
+        arr[i] = getf("");
+        /* arr[i] = randFloat(10); */
     }
 } 
 
@@ -139,36 +140,36 @@ void initDoubleArray(double arr[], const int size) {
 } 
 
 void printIntArray(int arr[], const int size) {
-    printf("\n[");
+    printf("\n{");
     for (int i = 0; i < size; i++) {
         printf("%d", arr[i]);
         if (i != size-1) {
             printf(",");
         }
     }
-    printf("]\n");
+    printf("}\n");
 }
 
 void printFloatArray(float arr[], const int size) {
-    printf("\n[");
+    printf("\n{");
     for (int i = 0; i < size; i++) {
         printf("%.2f", arr[i]);
         if (i != size-1) {
             printf(",");
         }
     }
-    printf("]\n");
+    printf("}\n");
 }
 
 void printDoubleArray(double arr[], const int size) {
-    printf("\n[");
+    printf("\n{");
     for (int i = 0; i < size; i++) {
         printf("%lf", arr[i]);
         if (i != size-1) {
             printf(",");
         }
     }
-    printf("]\n");
+    printf("}\n");
 }
 
 void file_print(const char filename[]) {

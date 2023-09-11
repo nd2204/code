@@ -9,5 +9,16 @@ int main() {
     srand((unsigned) time(&t));
 
     /* bai1(); */
-    bai2();
+    /* bai2(); */
+    bai3();
+    /* bai4(); */
+    /* bai5(); */
+    /* bai6(); */
+    /* bai7(); */
+    /* bai8(); */
+    /* bai9(); */
+    /* bai10(); */
+    /* bai11(); */
+    /* bai12(); */
+    /* bai13(); */
 }
