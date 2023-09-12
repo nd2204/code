@@ -29,4 +29,6 @@ void printDoubleArray(double arr[], const int size);
 
 void file_print(const char string[]);
 
+int compare(float array[], int elem1, int elem2);
+
 #endif /* ifndef helper_h */

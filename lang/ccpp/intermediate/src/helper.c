@@ -3,6 +3,20 @@
 #include "helper.h"
 #include <string.h>
 
+typedef enum {
+    ASC, DES,
+} Order;
+
+int compare(float array[], int elem1, int elem2) {
+    return array[elem1] - array[elem2];
+}
+
+void swap(void* i, void* j) {
+    void* temp = i;
+    i = j;
+    j = temp; 
+}
+
 static int get_terminal_width() {
     int width = 0;
     FILE *fp = popen("tput cols", "r"); // Run 'tput cols' command and read the output

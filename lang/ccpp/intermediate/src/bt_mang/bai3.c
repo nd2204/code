@@ -21,7 +21,9 @@ void bai3() {
 
     printf("Trung bình cộng các số dương trong mảng là: %.2f", 
            average_positive_int(mang,n));
+
 }
+
 
 float average_positive_int(float* array, const int arraySize) {
     int total = 0;
