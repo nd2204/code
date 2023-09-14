@@ -15,11 +15,14 @@ void mergeSortFloat(float array[], int left, int right);
 void Write2File(float arr[], int arr_size);
 
 void bai3() {
-    /* int n = geti("Nhap n: "); */
-    float mang[] = {9.20, 5.10, 5.00, 21.50, 12.60, 2.20, 1.00, 5.00, 4.00, 11.00};
-    int n = sizeof(mang) / sizeof(mang[0]);
+    // Testing
+    /* float mang[] = {9.20, 5.10, 5.00, 21.50, 12.60, 2.20, 1.00, 5.00, 4.00, 11.00}; */
+    /* int n = sizeof(mang) / sizeof(mang[0]); */
 
-    /* initFloatArray(mang,n); */
+    int n = geti("Nhap n: ");
+    float mang[n];
+    initFloatArray(mang,n);
+
     printf("Mang vua nhap la:\n");
     printFloatArray(mang,n);
 

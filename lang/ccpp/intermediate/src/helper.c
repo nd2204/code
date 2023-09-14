@@ -69,7 +69,7 @@ int geti(const char string[]) {
 
     do {
 
-        printf("%s", string);
+        printf("\n%s", string);
         validate = scanf("%d", &input);
 
         // Consume all character in stdin to handle invalid input (similar to fflush(stdin))
@@ -91,7 +91,7 @@ float getf(const char string[]) {
 
     do {
 
-        printf("%s", string);
+        printf("\n%s", string);
         validate = scanf("%f", &input);
 
         // Consume all character in stdin to handle invalid input (similar to fflush(stdin))
@@ -113,7 +113,7 @@ double getd(const char string[]) {
 
     do {
 
-        printf("%s", string);
+        printf("\n%s", string);
         validate = scanf("%lf", &input);
 
         // Consume all character in stdin to handle invalid input (similar to fflush(stdin))

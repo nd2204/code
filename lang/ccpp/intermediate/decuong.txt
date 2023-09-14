@@ -1,12 +1,3 @@
-// Bài số 4
-// Viết chương trình dưới dạng hàm thực hiện các chức năng sau:
-// 1. Nhập một mảng số nguyên một chiều gồm n phần tử vào bộ nhớ động.
-// 2. Hiển thị dãy vừa nhập ra màn hình trên một hàng.
-// 3. Hiển thị các số nguyên tố có trong mảng.
-// 4. Nhập một số x từ bàn phím, kiểm tra xem x có trong mảng không?
-// 5. Ghi vào tệp daysochan.txt những phần tử chẵn của dãy. Đọc dữ liệu từ tệp ra
-// màn hình.
-// Chương trình chính gọi thực hiện các hàm trên.
 // 
 // Bài số 5
 // Viết chương trình dưới dạng hàm thực hiện các chức năng sau:
