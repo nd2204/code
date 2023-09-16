@@ -1,21 +1,8 @@
 // helper.c
 
 #include "helper.h"
-#include <string.h>
-
-typedef enum {
-    ASC, DES,
-} Order;
-
-int compare(float array[], int elem1, int elem2) {
-    return array[elem1] - array[elem2];
-}
-
-void swap(void* i, void* j) {
-    void* temp = i;
-    i = j;
-    j = temp; 
-}
+#include <stdarg.h>
+#include <wchar.h>
 
 static int get_terminal_width() {
     int width = 0;
@@ -63,13 +50,33 @@ float randFloat(const float range) {
     return ((float)rand()/(float)RAND_MAX) * range * sign;
 }
 
-int geti(const char string[]) {
+int geti(const char* format, ...) {
     int input;
     int validate;
 
     do {
+        va_list args;
+        va_start(args, format);
 
-        printf("\n%s", string);
+        while (*format) {
+            if (*format == '%') {
+                format++;
+                if (*format == 'd') {
+                    int num = va_arg(args, int);
+                    printf("%d", num);
+                }
+                else if (*format == 's') {
+                    char* str = va_arg(args, char*);
+                    printf("%s", str);
+                }
+            } else {
+                putwchar(*format);
+            }
+            format++;
+        }
+
+        va_end(args);
+
         validate = scanf("%d", &input);
 
         // Consume all character in stdin to handle invalid input (similar to fflush(stdin))
@@ -79,19 +86,39 @@ int geti(const char string[]) {
         if (validate != 1) {
             printf("Nhap sai. Vui long nhap so nguyen!\n");
         }
-
     } while (validate != 1);
 
     return input; 
 }
 
-float getf(const char string[]) {
+float getf(const char* format, ...) {
     float input;
     int validate;
 
     do {
+        va_list args;
+        va_start(args, format);
 
-        printf("\n%s", string);
+        while (*format) {
+            if (*format == '%') {
+                format++;
+                if (*format == 'd') {
+                    int num = va_arg(args, int);
+                    printf("%d", num);
+                }
+                else if (*format == 's') {
+                    char* str = va_arg(args, char*);
+                    printf("%s", str);
+                }
+            } else {
+                putwchar(*format);
+            }
+            format++;
+        }
+
+        va_end(args);
+
+        printf("\n%s", format);
         validate = scanf("%f", &input);
 
         // Consume all character in stdin to handle invalid input (similar to fflush(stdin))
@@ -107,13 +134,34 @@ float getf(const char string[]) {
     return input; 
 }
 
-double getd(const char string[]) {
+double getd(const char* format, ...) {
     double input;
     int validate;
 
     do {
+        va_list args;
+        va_start(args, format);
 
-        printf("\n%s", string);
+        while (*format) {
+            if (*format == '%') {
+                format++;
+                if (*format == 'd') {
+                    int num = va_arg(args, int);
+                    printf("%d", num);
+                }
+                else if (*format == 's') {
+                    char* str = va_arg(args, char*);
+                    printf("%s", str);
+                }
+            } else {
+                putwchar(*format);
+            }
+            format++;
+        }
+
+        va_end(args);
+
+        printf("\n%s", format);
         validate = scanf("%lf", &input);
 
         // Consume all character in stdin to handle invalid input (similar to fflush(stdin))
@@ -193,11 +241,26 @@ void file_print(const char filename[]) {
     }
 
     char ch;
-    int length = strlen(filename);
     draw_title(filename);
     while ((ch = fgetc(file)) != EOF) {
         printf("%c", ch);
     }
 
     fclose(file);
+}
+
+bool isNullFilePtr(FILE* fileptr) {
+    if (fileptr == NULL) {
+        fprintf(stderr, "Could not open file");
+        return true;
+    }
+    return false;
+}
+
+bool isNullPtr(void* ptr) {
+    if (ptr == NULL) {
+        fprintf(stderr, "Could not allocate memory");
+        return true;
+    }
+    return false;
 }

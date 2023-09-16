@@ -1,20 +1,10 @@
-// baitap
+// baitap.h
 
-#ifndef baitap_h
-#define baitap_h
+#ifndef BAITAP_H
+#define BAITAP_H
 
-void bai1();
-void bai2();
-void bai3();
-void bai4();
-void bai5();
-void bai6();
-void bai7();
-void bai8();
-void bai9();
-void bai10();
-void bai11();
-void bai12();
-void bai13();
+#include "bt_mang.h"
+#include "bt_matran.h"
+#include "bt_cautruc.h"
 
-#endif // !DEBUG
+#endif

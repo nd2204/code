@@ -1,6 +1,16 @@
 # Thanks to Job Vranish (<https://spin.atomicobject.com/2016/08/26/makefile-c-projects/>)
-MAKEFLAGS += --silent
+# MAKEFLAGS += --silent
 TARGET_EXEC := final_program
+CFLAGS := -Wall
+
+DEBUG := 1
+
+ifeq ($(DEBUG), 1)
+    CFLAGS += -g -DDEBUG
+    TARGET_EXEC := debug
+else
+    TARGET_EXEC := main
+endif
 
 BUILD_DIR := ./build
 SRC_DIRS := ./src
