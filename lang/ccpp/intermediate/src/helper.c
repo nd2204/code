@@ -118,51 +118,7 @@ float getf(const char* format, ...) {
 
         va_end(args);
 
-        printf("\n%s", format);
         validate = scanf("%f", &input);
-
-        // Consume all character in stdin to handle invalid input (similar to fflush(stdin))
-        while (getchar() != '\n');
-
-        // Check for invalid input
-        if (validate != 1) {
-            printf("Nhap sai. Vui long nhap so thuc!\n");
-        }
-
-    } while (validate != 1);
-
-    return input; 
-}
-
-double getd(const char* format, ...) {
-    double input;
-    int validate;
-
-    do {
-        va_list args;
-        va_start(args, format);
-
-        while (*format) {
-            if (*format == '%') {
-                format++;
-                if (*format == 'd') {
-                    int num = va_arg(args, int);
-                    printf("%d", num);
-                }
-                else if (*format == 's') {
-                    char* str = va_arg(args, char*);
-                    printf("%s", str);
-                }
-            } else {
-                putwchar(*format);
-            }
-            format++;
-        }
-
-        va_end(args);
-
-        printf("\n%s", format);
-        validate = scanf("%lf", &input);
 
         // Consume all character in stdin to handle invalid input (similar to fflush(stdin))
         while (getchar() != '\n');
@@ -179,27 +135,25 @@ double getd(const char* format, ...) {
 
 void initIntArray(int arr[], const int size) {
     for (int i = 0; i < size; i++) {
-        printf("Nhap gia tri phan tu thu %d: ", i+1);
-        /* arr[i] = geti(""); */
+        /* arr[i] = geti("Nhap gia tri phan tu thu %d: ", i+1); */
         arr[i] = randInt(10);
     }
 } 
 
 void initFloatArray(float arr[], const int size) {
     for (int i = 0; i < size; i++) {
-        printf("Nhap gia tri phan tu thu %d: ", i+1);
-        arr[i] = getf("");
+        arr[i] = getf("Nhap gia tri phan tu thu %d: ", i+1);
         /* arr[i] = randFloat(10); */
     }
-} 
+}
 
-void initDoubleArray(double arr[], const int size) {
-    for (int i = 0; i < size; i++) {
-        printf("Nhap gia tri phan tu thu %d: ", i+1);
-        /* arr[i] = getd(""); */
-        arr[i] = randFloat(100);
+void initIntMatrix(int* matrix, int row, int col) {
+    for (int i = 0; i < row; i++) {
+        for (int j = 0; j < col; j++) {
+            *(matrix+i*col+j) = geti("hang %d cot %d: ", i, j);
+        }
     }
-} 
+}
 
 void printIntArray(int arr[], const int size) {
     printf("\n{");
@@ -223,13 +177,17 @@ void printFloatArray(float arr[], const int size) {
     printf("}\n");
 }
 
-void printDoubleArray(double arr[], const int size) {
+void printIntMatrix(int* matrix, int row, int col) {
     printf("\n{");
-    for (int i = 0; i < size; i++) {
-        printf("%lf", arr[i]);
-        if (i != size-1) {
-            printf(",");
+    for (int i = 0; i < row; i++) {
+        printf("\n{");
+        for (int j = 0; j < col; j++) {
+            printf("%d", *(matrix+i*col+j));
+            if (i != col-1) {
+                printf(",");
+            }
         }
+        printf("}\n");
     }
     printf("}\n");
 }

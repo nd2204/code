@@ -7,7 +7,15 @@ int main() {
     /* Intializes random number generator */
     time_t t;
     srand((unsigned) time(&t));
+    
+    int m = geti("Nhap so hang: "); 
+    int n = geti("Nhap so cot: "); 
+    int *matran = (int*)malloc(m*n*sizeof(int*));
 
+    initIntMatrix(matran, m, n);
+    printIntMatrix(matran, m, n);
+
+    free(matran);
 }
 
 // Yeu cau nguoi dung nhap kich thuoc cho mang

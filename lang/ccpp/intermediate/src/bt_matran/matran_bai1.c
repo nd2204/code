@@ -7,6 +7,9 @@
 #include "bt_matran.h"
 
 // 3. Tính trung bình cộng các phần tử lẻ của ma trận
+float matran_b1c3_average(int* matrix[], int row, int col) {
+    return 0;    
+}
 
 // 4. Tìm giá trị lớn nhất trên cột 1 của ma trận. In giá trị và vị trí của phần tử lớn nhất đó ra màn hình.
 
