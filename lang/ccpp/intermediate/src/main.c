@@ -3,19 +3,35 @@
 #include "helper.h"
 #include "baitap.h"
 
+void initMatrix(int row, int col, int arr[row][col]) {
+    for (int i = 0; i < row; i++) {
+        for (int j = 0; j < col; j++) {
+            printf("a[%d][%d] = ", i, j); scanf("%d", &arr[i][j]);
+        }
+    } 
+}
+
+void printMatrix(int row, int col, int arr[row][col]) {
+    for (int i = 0; i < row; i++) {
+        for (int j = 0; j < col; j++) {
+            printf("%d\t", arr[i][j]);
+        }
+        printf("\n");
+    } 
+}
+
 int main() {
     /* Intializes random number generator */
     time_t t;
     srand((unsigned) time(&t));
-    
+
     int m = geti("Nhap so hang: "); 
     int n = geti("Nhap so cot: "); 
-    int *matran = (int*)malloc(m*n*sizeof(int*));
+    int arr[m][n];
 
-    initIntMatrix(matran, m, n);
-    printIntMatrix(matran, m, n);
-
-    free(matran);
+    printf("Nhap mang:\n");
+    initMatrix(m, n, arr);
+    printMatrix(m, n, arr);
 }
 
 // Yeu cau nguoi dung nhap kich thuoc cho mang
