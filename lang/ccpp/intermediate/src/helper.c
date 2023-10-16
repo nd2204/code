@@ -42,7 +42,7 @@ static void draw_title(const char title[]) {
 
 int randInt(const int range) {
     int sign = (rand()%2 == 0) ? 1 : -1;
-    return sign * rand()%range;
+    return rand()%range;
 }
 
 float randFloat(const float range) {
