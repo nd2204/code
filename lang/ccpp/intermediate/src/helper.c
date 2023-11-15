@@ -133,26 +133,39 @@ float getf(const char* format, ...) {
     return input; 
 }
 
-void initIntArray(int arr[], const int size) {
+int* initIntArray(size_t size) {
+    int* arr = malloc(sizeof(int) * size);
     for (int i = 0; i < size; i++) {
         /* arr[i] = geti("Nhap gia tri phan tu thu %d: ", i+1); */
         arr[i] = randInt(10);
     }
+    return arr;
 } 
 
-void initFloatArray(float arr[], const int size) {
+float* initFloatArray(size_t size) {
+    float* arr = malloc(sizeof(float) * size);
     for (int i = 0; i < size; i++) {
-        arr[i] = getf("Nhap gia tri phan tu thu %d: ", i+1);
-        /* arr[i] = randFloat(10); */
+        /* arr[i] = getf("Nhap gia tri phan tu thu %d: ", i+1); */
+        arr[i] = randFloat(10);
     }
+    return arr;
 }
 
-void initIntMatrix(int* matrix, int row, int col) {
+int** initIntMatrix(size_t row, size_t col) {
+    int **matrix = (int**)malloc(sizeof(int*)*row);
+
+    for (int i = 0; i < row; i++) {
+        *(matrix+i) = (int*)malloc(sizeof(int)*col);
+    }
+
     for (int i = 0; i < row; i++) {
         for (int j = 0; j < col; j++) {
-            *(matrix+i*col+j) = geti("hang %d cot %d: ", i, j);
+            /* matrix[i][j] = geti("hang %d cot %d: ", i, j); */
+            matrix[i][j] = randInt(100);
         }
     }
+
+    return matrix;
 }
 
 void printIntArray(int arr[], const int size) {
@@ -177,13 +190,14 @@ void printFloatArray(float arr[], const int size) {
     printf("}\n");
 }
 
-void printIntMatrix(int* matrix, int row, int col) {
-    printf("\n{");
+
+void printIntMatrix(int** matrix, int row, int col) {
+    printf("\n{\n");
     for (int i = 0; i < row; i++) {
-        printf("\n{");
+        printf("{");
         for (int j = 0; j < col; j++) {
-            printf("%d", *(matrix+i*col+j));
-            if (i != col-1) {
+            printf("%d", matrix[i][j]);
+            if (j != col-1) {
                 printf(",");
             }
         }
@@ -191,6 +205,7 @@ void printIntMatrix(int* matrix, int row, int col) {
     }
     printf("}\n");
 }
+
 
 void file_print(const char filename[]) {
     FILE* file = fopen(filename, "r");
@@ -205,6 +220,12 @@ void file_print(const char filename[]) {
     }
 
     fclose(file);
+}
+
+void swap_int(int *a, int *b) {
+    int temp = *a;
+    *a = *b;
+    *b = temp;
 }
 
 bool isNullFilePtr(FILE* fileptr) {
