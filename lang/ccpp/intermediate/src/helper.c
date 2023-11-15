@@ -1,6 +1,8 @@
 // helper.c
 
 #include "helper.h"
+#include <float.h>
+#include <limits.h>
 #include <stdarg.h>
 #include <wchar.h>
 
@@ -50,87 +52,44 @@ float randFloat(const float range) {
     return ((float)rand()/(float)RAND_MAX) * range * sign;
 }
 
-int geti(const char* format, ...) {
+int get_int(const char* format, ...) {
     int input;
     int validate;
 
-    do {
-        va_list args;
-        va_start(args, format);
+    va_list args;
+    va_start(args, format);
+    vprintf(format, args);
+    va_end(args);
 
-        while (*format) {
-            if (*format == '%') {
-                format++;
-                if (*format == 'd') {
-                    int num = va_arg(args, int);
-                    printf("%d", num);
-                }
-                else if (*format == 's') {
-                    char* str = va_arg(args, char*);
-                    printf("%s", str);
-                }
-            } else {
-                putwchar(*format);
-            }
-            format++;
-        }
-
-        va_end(args);
-
-        validate = scanf("%d", &input);
-
-        // Consume all character in stdin to handle invalid input (similar to fflush(stdin))
-        while (getchar() != '\n');
-
-        // Check for invalid input
-        if (validate != 1) {
-            printf("Nhap sai. Vui long nhap so nguyen!\n");
-        }
-    } while (validate != 1);
-
+    validate = scanf("%d", &input);
+    // Consume all character in stdin to handle invalid input (similar to fflush(stdin))
+    while (getchar() != '\n');
+    // Check for invalid input
+    if (validate != 1) {
+        return INT_MAX;
+    }
     return input; 
 }
 
-float getf(const char* format, ...) {
+float get_float(const char* format, ...) {
     float input;
     int validate;
 
-    do {
-        va_list args;
-        va_start(args, format);
+    va_list args;
+    va_start(args, format);
+    vprintf(format, args);
+    va_end(args);
 
-        while (*format) {
-            if (*format == '%') {
-                format++;
-                if (*format == 'd') {
-                    int num = va_arg(args, int);
-                    printf("%d", num);
-                }
-                else if (*format == 's') {
-                    char* str = va_arg(args, char*);
-                    printf("%s", str);
-                }
-            } else {
-                putwchar(*format);
-            }
-            format++;
-        }
+    validate = scanf("%f", &input);
 
-        va_end(args);
+    // Consume all character in stdin to handle invalid input (similar to fflush(stdin))
+    while (getchar() != '\n');
 
-        validate = scanf("%f", &input);
-
-        // Consume all character in stdin to handle invalid input (similar to fflush(stdin))
-        while (getchar() != '\n');
-
-        // Check for invalid input
-        if (validate != 1) {
-            printf("Nhap sai. Vui long nhap so thuc!\n");
-        }
-
-    } while (validate != 1);
-
-    return input; 
+    // Check for invalid input
+    if (validate != 1) {
+        return FLT_MAX; 
+    }
+    return input;
 }
 
 int* initIntArray(size_t size) {
@@ -151,6 +110,29 @@ float* initFloatArray(size_t size) {
     return arr;
 }
 
+
+void printIntArray(int* arr, size_t size) {
+    printf("\n{");
+    for (int i = 0; i < size; i++) {
+        printf("%d", arr[i]);
+        if (i != size-1) {
+            printf(",");
+        }
+    }
+    printf("}\n");
+}
+
+void printFloatArray(float* arr, size_t size) {
+    printf("\n{");
+    for (int i = 0; i < size; i++) {
+        printf("%.2f", arr[i]);
+        if (i != size-1) {
+            printf(",");
+        }
+    }
+    printf("}\n");
+}
+
 int** initIntMatrix(size_t row, size_t col) {
     int **matrix = (int**)malloc(sizeof(int*)*row);
 
@@ -168,30 +150,7 @@ int** initIntMatrix(size_t row, size_t col) {
     return matrix;
 }
 
-void printIntArray(int arr[], const int size) {
-    printf("\n{");
-    for (int i = 0; i < size; i++) {
-        printf("%d", arr[i]);
-        if (i != size-1) {
-            printf(",");
-        }
-    }
-    printf("}\n");
-}
-
-void printFloatArray(float arr[], const int size) {
-    printf("\n{");
-    for (int i = 0; i < size; i++) {
-        printf("%.2f", arr[i]);
-        if (i != size-1) {
-            printf(",");
-        }
-    }
-    printf("}\n");
-}
-
-
-void printIntMatrix(int** matrix, int row, int col) {
+void printIntMatrix(int** matrix, size_t row, size_t col) {
     printf("\n{\n");
     for (int i = 0; i < row; i++) {
         printf("{");
@@ -236,7 +195,7 @@ bool isNullFilePtr(FILE* fileptr) {
     return false;
 }
 
-bool isNullPtr(void* ptr) {
+bool isNullPtr(const void* ptr) {
     if (ptr == NULL) {
         fprintf(stderr, "Could not allocate memory");
         return true;
