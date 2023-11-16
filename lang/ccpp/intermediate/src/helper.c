@@ -4,7 +4,6 @@
 #include <float.h>
 #include <limits.h>
 #include <stdarg.h>
-#include <wchar.h>
 
 static int get_terminal_width() {
     int width = 0;
@@ -99,7 +98,7 @@ int* initIntArray(size_t size) {
         arr[i] = randInt(10);
     }
     return arr;
-} 
+}
 
 float* initFloatArray(size_t size) {
     float* arr = malloc(sizeof(float) * size);
@@ -133,18 +132,11 @@ void printFloatArray(float* arr, size_t size) {
     printf("}\n");
 }
 
-int** initIntMatrix(size_t row, size_t col) {
+int** malloc_matrix(size_t row, size_t col) {
     int **matrix = (int**)malloc(sizeof(int*)*row);
 
     for (int i = 0; i < row; i++) {
         *(matrix+i) = (int*)malloc(sizeof(int)*col);
-    }
-
-    for (int i = 0; i < row; i++) {
-        for (int j = 0; j < col; j++) {
-            /* matrix[i][j] = geti("hang %d cot %d: ", i, j); */
-            matrix[i][j] = randInt(100);
-        }
     }
 
     return matrix;
@@ -165,6 +157,12 @@ void printIntMatrix(int** matrix, size_t row, size_t col) {
     printf("}\n");
 }
 
+void free_matrix(void** matrix, size_t row) {
+    for (int i = 0; i < row; i++) {
+        free(*(matrix+i));
+    }
+    free(matrix);
+}
 
 void file_print(const char filename[]) {
     FILE* file = fopen(filename, "r");

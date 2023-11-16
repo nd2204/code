@@ -12,8 +12,8 @@ void mang_b5c3(int arr[], int arr_size) {
 
     do {
         printf("\nNhap x va y (1 <= x < y <= %d)\n", arr_size);
-        x = geti("x: ") - 1;
-        y = geti("y: ") - 1;
+        x = get_int("x: ") - 1;
+        y = get_int("y: ") - 1;
     } while (x >= arr_size || y >= arr_size || y < 0 || x < 0 || x >= y);
 
     for (int i = x; i <= y; i++) {

@@ -19,10 +19,10 @@ void mang_b7c4(int arr[], int size) {
     int x, k;
     do {
         printf("Nhap vi tri k (1<=k<=%d)\n", size);
-        k = geti("k: ") - 1;
+        k = get_int("k: ") - 1;
     } while (k < 0 || k >= size);
 
-    x = geti("Nhap gia tri x vi tri %d: ", k+1); 
+    x = get_int("Nhap gia tri x vi tri %d: ", k+1); 
 
     printf("\nMang moi sau khi them %d vao vi tri %d: ", x, k + 1);
     int temp[size+1];

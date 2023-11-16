@@ -18,8 +18,8 @@ float get_float(const char*, ...);
 // Functions to prompt the user for input array elements for different data types
 int* initIntArray(size_t);
 float* initFloatArray(size_t);
-int** initIntMatrix(size_t, size_t);
-void free_matrix(void* matrix, size_t, size_t);
+int** malloc_matrix(size_t, size_t);
+void free_matrix(void** matrix, size_t);
 // Functions to print out the array on the screen
 void printIntArray(int*, size_t);
 void printFloatArray(float*, size_t);

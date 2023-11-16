@@ -32,7 +32,7 @@ float mang_b2c4(float array[], const int size) {
     int x, count = 0;
     float total = 0;
     do {
-        x  = geti("Nhap gia tri x: "); 
+        x  = get_int("Nhap gia tri x: "); 
     } while (x > size || x < 1);
 
     for (int i = 0; i < x; i++) {
