@@ -1,0 +1,4 @@
+SV02 Dang_Quang_Minh 2003 9.50
+SV05 Bui_Thi_Huyen 2002 9.00
+SV03 Ngo_Minh_Tri 2001 8.00
+SV06 Ta_Quang_Anh 2000 7.00

@@ -1,0 +1,6 @@
+SV01 Nguyen_Khanh_Linh  2001 10
+SV02 Dang_Quang_Minh    2003 9.5
+SV03 Ngo_Minh_Tri       2001 8.0
+SV04 Nguyen_Ngoc_Tu     2004 10
+SV05 Bui_Thi_Huyen      2002 9.0
+SV06 Ta_Quang_Anh       2000 7.0
