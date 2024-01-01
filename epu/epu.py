@@ -5,7 +5,6 @@ from PIL import Image
 from selenium import webdriver 
 from selenium.webdriver.common.by import By
 import getpass
-import time
 import os
 
 options = webdriver.ChromeOptions()
@@ -80,13 +79,13 @@ class EPULoginPage(webdriver.Chrome):
         self.find_element(By.ID, "ctl00_ucRight1_btnLogin").click()
         os.remove("ss.png")
 
-    def get_calendar_img(self):
+    def get_calendar_img(self, filename):
         self.get(self.HOST + self.PATH[1])
-        self.save_screenshot("calendar.png")
+        self.save_screenshot(filename)
         calendar = self.find_element(By.CLASS_NAME, "div-ChiTietLich")
         img = Captcha(calendar.location, calendar.size)
-        img = img.extract_image("calendar.png", 1)
-        img.save("calendar.png")
+        img = img.extract_image(filename, 1)
+        img.save(filename)
 
 if __name__ == "__main__":
     try:
@@ -104,4 +103,4 @@ if __name__ == "__main__":
     page = EPULoginPage(options=options, keep_alive=True)
     page.init()
     page.login(usr_id, usr_password)
-    page.get_calendar_img()
+    page.get_calendar_img("calendar.png")
