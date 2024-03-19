@@ -2,7 +2,7 @@
 #define DEFINES_H
 
 /** @brief Static assertion */
-#if defined(__clang__) || defined(__GNUC__)
+#if (defined(__clang__) || defined(__GNUC__)) && !defined(__cplusplus)
     #define STATIC_ASSERT _Static_assert
 #else
     #define STATIC_ASSERT static_assert

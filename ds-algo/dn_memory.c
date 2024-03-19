@@ -22,7 +22,7 @@ static const char* memory_tag_strings[MEMORY_TAG_MAX_TAGS] = {
 void memory_system_initialize() {
     if (!state_ptr)
     {
-        state_ptr = malloc(sizeof(memory_stat));
+        state_ptr = (memory_stat*) malloc(sizeof(memory_stat));
         state_ptr->total_allocated = 0;
         memset(state_ptr->tagged_allocations, 0, sizeof(state_ptr->tagged_allocations));
     }

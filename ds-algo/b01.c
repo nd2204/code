@@ -107,8 +107,6 @@ void insertBefore(list* plist, b8 (*compare)(const node*, const node*), node* pn
     }
 }
 
-void removeTail()
-
 const char* hanhkiem_str[HANH_KIEM_MAXSIZE] = {
     "",
     "TOT",
