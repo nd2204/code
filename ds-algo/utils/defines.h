@@ -2,10 +2,23 @@
 #define DEFINES_H
 
 /** @brief Static assertion */
-#if (defined(__clang__) || defined(__GNUC__)) && !defined(__cplusplus)
+#if (defined(__clang__) || defined(__GNUC__))
     #define STATIC_ASSERT _Static_assert
 #else
     #define STATIC_ASSERT static_assert
+#endif
+
+#if defined(__cplusplus)
+    #undef STATIC_ASSERT
+    #define STATIC_ASSERT static_assert
+#endif
+
+
+
+#if defined(__linux__)
+    #define API
+#elif defined(__MINGW32__) || defined(_WIN32)
+    #define API __declspec(dllexport)
 #endif
 
 typedef signed char         i8;
@@ -22,6 +35,7 @@ typedef float   f32;
 typedef double  f64;
 
 typedef unsigned char       b8;
+
 
 #define TRUE 1
 #define FALSE 0

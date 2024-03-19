@@ -1,5 +1,5 @@
 #include <iostream>
-#include "defines.h"
+#include "utils/defines.h"
 
 using std::cin, std::cout, std::getline;
 
@@ -112,17 +112,19 @@ public:
     }
 
     void insertBefore(b8 (*compare)(const T&, const T&), T &data) {
+        Node<T>* ptr;
+        if (compare(head->data, data)) {
+            ptr = Node<T>::create_node(data);
+            ptr->next = head->next;
+            head->next = ptr;
+        }
         for (Node<T>* p = head; p != tail; p = p->next)
         {
             if (compare(p->next->data, data))
             {
-                if (p == head) {
-                    insertHead(data);
-                } else {
-                    Node<T>* ptr = Node<T>::create_node(data);
-                    ptr->next = p->next;
-                    p->next = ptr;
-                }
+                ptr = Node<T>::create_node(data);
+                ptr->next = p->next;
+                p->next = ptr;
             }
         }
     }

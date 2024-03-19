@@ -1,6 +1,6 @@
 #include <stdio.h>
-#include "defines.h"
-#include "dn_memory.h"
+#include "utils/defines.h"
+#include "utils/dn_memory.h"
 
 typedef enum hanh_kiem {
     HANH_KIEM_UNKNOWN,
