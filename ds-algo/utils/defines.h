@@ -13,8 +13,6 @@
     #define STATIC_ASSERT static_assert
 #endif
 
-
-
 #if defined(__linux__)
     #define API
 #elif defined(__MINGW32__) || defined(_WIN32)
