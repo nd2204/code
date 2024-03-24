@@ -1,21 +1,18 @@
 #include <iostream>
 
+int my_function() {
+  static int count = 0;
+  count++;
+  return count;
+}
+ 
 int main(void)
 {
-    size_t n {};
-    std::cin >> n;
-
-    std::cout << n << " ";
-    while (n != 1)
-    {
-        if (n % 2 == 0)
-        {
-            n /= 2;
-        }
-        else
-        {
-            n = n * 3 + 1;
-        }
-        std::cout << n << " ";
-    }
+  std::cout << "function called " << my_function() << " times\n";
+  std::cout << "function called " << my_function() << " times\n";
+  std::cout << "function called " << my_function() << " times\n";
+  std::cout << "function called " << my_function() << " times\n";
+  std::cout << "function called " << my_function() << " times\n";
+  std::cout << "function called " << my_function() << " times\n";
+  std::cout << "function called " << my_function() << " times\n";
 }
