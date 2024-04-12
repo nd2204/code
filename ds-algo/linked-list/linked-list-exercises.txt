@@ -1,0 +1,563 @@
+B01 Trên ngôn ngữ C/C++, viết chương trình thực hiện yêu cầu sau:
+
+1. (1 điểm): Định nghĩa một cấu trúc Sinh viên bao gồm các trường thông tin như sau:
+    Mã Sinh viên (kiểu số nguyên), tên Sinh viên (kiểu chuỗi ký tự), lớp (kiểu chuỗi ký tự),
+    điểm tổng kết (kiểu số thực), hạnh kiểm (Tốt, khá, trung bình, yếu).
+
+2. (4 điểm): Cài đặt một cấu trúc danh sách liên kết đơn cho kiểu dữ liệu Sinh viên, với các thao tác:
+    1) Khởi tạo danh sách;2) Tạo mới một nút chứa dữ liệu; 3) Chèn nút vào cuối danh sách;
+    4) Tìm kiếm phần tử trong danh sách; 5) Xóa nút cuối cùng khỏi danh sách; 6) Duyệt danh sách.
+
+3. (5 điểm): Chương trình chính: Sử dụng cấu trúc danh sách liên kết đơn và các thao tác ở trên để:
+    - Nhập vào một danh sách liên kết đơn gồm n Sinh viên (n bất kỳ).
+    - Hiển thị danh sách đã nhập ra màn hình.
+    - Liệt kê ra màn hình danh sách tất cả những Sinh viên thuộc lớp “D13CNPM”.
+    - Xóa nút cuối cùng khỏi danh sách. Hiển thị lại danh sách sau khi xóa ra màn hình.
+
+---
+
+B02: Trên ngôn ngữ C/C++, viết chương trình thực hiện yêu cầu sau:
+
+1. (1 điểm): Định nghĩa một cấu trúc Sinh viên bao gồm các trường thông tin như sau:
+   Mã Sinh viên (kiểu số nguyên), tên Sinh viên (kiểu chuỗi ký tự), lớp (kiểu chuỗi ký tự),
+   điểm tổng kết (kiểu số thực), hạnh kiểm (Tốt, khá, trung bình, yếu).
+
+2. (4 điểm): Cài đặt một cấu trúc danh sách liên kết đôi cho kiểu dữ liệu Sinh viên, với các thao tác:
+   1) Khởi tạo danh sách; 2) Tạo mới một nút chứa dữ liệu; 3) Chèn nút vào cuối danh sách;
+   4) Tìm kiếm phần tử trong danh sách; 5) Xóa nút cuối cùng khỏi danh sách; 6) Duyệt danh sách.
+
+3. (5 điểm): Chương trình chính: Sử dụng cấu trúc danh sách liên kết đơn và các thao tác ở trên để:
+   - Nhập vào một danh sách liên kết đơn gồm n Sinh viên (n bất kỳ).
+   - Hiển thị danh sách đã nhập ra màn hình.
+   - Liệt kê ra màn hình danh sách tất cả những Sinh viên thuộc lớp “D13CNPM”.
+   - Xóa nút cuối cùng khỏi danh sách. Hiển thị lại danh sách sau khi xóa ra màn hình.
+
+---
+
+B03: Trên ngôn ngữ C/C++, viết chương trình thực hiện yêu cầu sau:
+
+1. (1 điểm): Định nghĩa một cấu trúc Học viên bao gồm các trường thông tin như sau:
+    Mã học viên (kiểu số nguyên), tên học viên (kiểu chuỗi ký tự), lớp (kiểu chuỗi ký tự),
+    chuyên ngành (Khoa học máy tính, Thương mại điện tử, Quản trị an ninh mạng), điểm tổng kết (kiểu số thực).
+
+2. (4 điểm): Cài đặt một cấu trúc danh sách liên kết đôi cho kiểu dữ liệu Học viên, với các thao tác:
+    1) Khởi tạo danh sách; 2) Tạo mới một nút chứa dữ liệu; 3) Chèn nút vào cuối danh sách;
+    4) Tìm kiếm phần tử trong danh sách; 5) Duyệt danh sách.
+
+3 (5 điểm): Chương trình chính: Sử dụng cấu trúc danh sách liên kết đôi và các thao tác đã tạo để:
+    - Nhập và 1 danh sách gồm n Học viên (n bất kỳ).
+    - Hiển thị danh sách đã nhập ra màn hình.
+    - Liệt kê ra màn hình danh sách tất cả những Học viên thuộc chuyên ngành “Thương mại điện tử” và có điểm tổng kết ≥ 8.0.
+    - Sắp xếp danh sách đã nhập theo tên học viên (thứ tự alphabet), hiển thị danh sách đã sắp ra màn hình.
+
+---
+
+B04: Trên ngôn ngữ C/C++, viết chương trình thực hiện yêu cầu sau:
+
+1. (1 điểm): Định nghĩa một cấu trúc Học viên bao gồm các trường thông tin như sau:
+    Mã học viên (kiểu số nguyên), tên học viên (kiểu chuỗi ký tự), lớp (kiểu chuỗi ký tự),
+    chuyên ngành (Khoa học máy tính, Thương mại điện tử, Quản trị an ninh mạng), điểm tổng kết (kiểu số thực).
+
+2 (4 điểm): Cài đặt một cấu trúc danh sách liên kết đơn cho kiểu dữ liệu Học viên, với các thao tác:
+    1) Khởi tạo danh sách; 2) Tạo mới một nút chứa dữ liệu; 3) Chèn nút vào cuối danh sách;
+    4) Tìm kiếm phần tử trong danh sách; 5) Duyệt danh sách.
+
+3 (5 điểm): Chương trình chính: Sử dụng cấu trúc danh sách liên kết đôi và các thao tác đã tạo để:
+    - Nhập và 1 danh sách gồm n Học viên (n bất kỳ).
+    - Hiển thị danh sách đã nhập ra màn hình.
+    - Liệt kê ra màn hình danh sách tất cả những Học viên thuộc chuyên ngành “Thương mại điện tử” và có điểm tổng kết ≥ 8.0.
+    - Sắp xếp danh sách đã nhập theo tên học viên (thứ tự alphabet), hiện thị danh sách đã sắp ra màn hình.
+
+---
+
+
+B33: Cài đặt một cấu trúc ngăn xếp bằng mảng, với các thao tác:
+1) Khởi tạo ngăn xếp; 2) Kiểm tra ngăn xếp rỗng; 3) Kiểm tra ngăn xếp đầy;
+4) Đưa một phần tử vào ngăn xếp, 5) lấy một phần tử ra khỏi ngăn xếp.
+
+- Chương trình chính: Sử dụng các thao tác đã cài đặt để:
++ Nhập vào một số nguyên dương N bất kỳ (hệ cơ số 10), sử dụng cấu trúc ngăn
+xếp để in ra giá trị ở hệ cơ số 16 của N ra màn hình:
+Ví dụ: n = 24710 => F716
+
+---
+
+B07: Trên ngôn ngữ C/C++, viết chương trình thực hiện yêu cầu sau:
+
+Khai Báo cấu trúc học sinh gồm các thông tin: Mã học sinh, họ tên, năm sinh, lớp, điểm tổng kết.
+```cpp
+struct HocSinh {
+    char ID[6];
+    char ho_ten[80];
+    int nam_sinh;
+    char lop[100];
+    float diem_tk;
+};
+```
+
+1. (2 điểm): Viết các hàm nhập vào từ bàn phím giá trị của một biến cấu trúc
+    Học sinh, hiển thị lên màn hình.
+
+2. (4 điểm): Nhập vào 1 số nguyên dương n, sử dụng cấu trúc danh sách
+    (dùng cài đặt mảng – danh sách kề hoặc cài đặt con trỏ-danh sách liên kết),
+    nhập vào danh sách gồm n học sinh. Hiển thị danh sách lên màn hình.
+
+3. (3 điểm): Hiển thị lên màn hình thông tin đầy đủ của học sinh có điểm tổng kết lớn nhất.
+
+4. (1 điểm): Chèn vào đầu danh sách một học sinh mới được chuyển trường tới
+    (thông tin sinh viên này được nhập từ bàn phím).
+    Hiển thị danh sách sau khi chèn ra màn hình.
+
+---
+
+B08: Trên ngôn ngữ C/C++, viết chương trình thực hiện yêu cầu sau:
+
+1. (1 điểm): Định nghĩa một cấu trúc Khách hàng, bao gồm các trường thông tin như sau:
+    Mã khách hàng (kiểu số nguyên), tên khách hàng (kiểu chuỗi ký tự), địa chỉ (kiểu chuỗi ký tự),
+    số điện thoại (kiểu chuỗi ký tự), tổng tiền thanh toán (kiểu số).
+
+2. (4 điểm): Cài đặt một cấu trúc danh sách liên kết đôi cho kiểu dữ liệu Khách hàng, với các thao tác:
+    1) Khởi tạo danh sách; 2) Tạo mới một nút chứa dữ liệu; 3) Chèn nút vào cuối danh sách;
+    4) Tìm kiếm phần tử trong danh sách; 5) Sắp xếp danh sách theo số lượng dịch vụ sử dụng giảm dần; 6) Duyệt danh sách;
+
+3. (5 điểm): Xây dựng chương trình chính, sử dụng các thao tác đã cài đặt để:
+    - Tạo một danh sách liên kết đôi gồm n khách hàng (n bất kỳ).
+    - Hiển thị danh sách đã nhập ra màn hình.
+    - Liệt kê ra màn hình thông tin đầy đủ của tất cả những khách hàng có địa chỉ tại Hà Nội.
+    - Sắp xếp danh sách khách hàng theo tổng tiền thanh toán giảm dần, hiển thị danh sách đã sắp ra màn hình.
+
+---
+
+B09: Trên ngôn ngữ C/C++, viết chương trình thực hiện yêu cầu sau:
+
+1. (1 điểm): Định nghĩa một cấu trúc Khách hàng, bao gồm các trường thông tin như sau:
+    Mã khách hàng (kiểu số nguyên), tên khách hàng (kiểu chuỗi ký tự), địa chỉ (kiểu
+    chuỗi ký tự), số điện thoại (kiểu chuỗi ký tự), tổng tiền thanh toán (kiểu số).
+
+2. (4 điểm): Cài đặt một cấu trúc danh sách liên kết đơn cho kiểu dữ liệu Khách hàng, với các thao tác:
+    1) Khởi tạo danh sách; 2) Tạo mới một nút chứa dữ liệu; 3) Chèn nút vào cuối danh sách;
+    4) Tìm kiếm phần tử trong danh sách; 5) Sắp xếp danh sách theo số lượng dịch vụ sử dụng giảm dần; 6) Duyệt danh sách;
+
+3. (5 điểm): Xây dựng chương trình chính, sử dụng các thao tác đã cài đặt để:
+    - Tạo một danh sách liên kết đôi gồm n khách hàng (n bất kỳ).
+    - Hiển thị danh sách đã nhập ra màn hình.
+    - Liệt kê ra màn hình thông tin đầy đủ của tất cả những khách hàng có địa chỉ tại Hà Nội.
+    - Sắp xếp danh sách khách hàng theo tổng tiền thanh toán giảm dần, hiển thị danh sách đã sắp ra màn hình.
+
+---
+
+B10:
+Trên ngôn ngữ C/C++, viết chương trình thực hiện yêu cầu sau:
+
+Khai báo cấu trúc date gồm các thông tin: ngày, tháng, năm.
+```cpp
+struct date {
+    int ngay, thang, nam;
+};
+```
+Khai báo cấu trúc nhân viên bao gồm các thông tin:
+Mã nhân viên, họ tên, ngày sinh (kiểu ngày/tháng/năm, ví dụ 10/10/2000), quê quán, lương (đơn vị triệu đồng):
+```cpp
+struct nv {
+    char ID[6];
+    char ho_ten[80];
+    date ngay_sinh;
+    char que_quan[100];
+    float luong;
+};
+```
+
+1. (2 điểm): Viết các hàm nhập vào từ bàn phím giá trị của một biến cấu trúc nv,
+    hiển thị lên màn hình.
+
+2. (4 điểm): Nhập vào số nguyên dương n, sử dụng cấu trúc dữ liệu danh sách liên kết đôi,
+    nhập vào danh sách n nhân viên.
+
+3. (3 điểm): Hiển thị danh sách liên kết đôi lên màn hình theo kiểu hiển thị từ cuối danh sách.
+
+4. (1 điểm): Bổ sung một nhân viên mới tuyển dụng (nhập thông tin nhân viên từ bàn phím) vào đầu danh sách.
+    Hiển thị danh sách sau khi chèn lên màn hình.
+
+---
+
+B11: Trên ngôn ngữ C/C++, viết chương trình thực hiện yêu cầu sau:
+
+1. (1 điểm): Định nghĩa kiểu dữ liệu cấu trúc Nhân viên bao gồm các thông tin:
+    Mã nhân viên (kiểu số nguyên), tên nhân viên (kiểu chuỗi ký tự), tuổi (kiểu số nguyên),
+    hệ số lương (kiểu số thực).
+
+2. (4 điểm): Cài đặt một cấu trúc danh sách liên kết đơn, với các thao tác:
+    1) Khởi tạo danh sách; 2) Tạo mới một nút chứa dữ liệu; 3) Chèn nút vào đầu danh sách;
+    4) Sắp xếp danh sách theo hệ số lương tăng dần; 5) Duyệt danh sách;
+
+3. (5 điểm): Xây dựng chương trình chính sử dụng các thao tác đã cài đặt để:
+    - Tạo vào một danh sách liên kết đơn gồm n nhân viên (n bất kỳ).
+    - Hiển thị danh sách Nhân viên đã tạo ra màn hình.
+    - Liệt kê ra màn hình thông tin đầy đủ của những nhân viên đến tuổi về hưu (60 tuổi).
+    - Sắp xếp danh sách đã tạo theo hệ số lương tăng dần, hiển thị danh sách sau khi sắp ra màn hình.
+
+---
+
+B12: Trên ngôn ngữ C/C++, viết chương trình thực hiện yêu cầu sau:
+
+1. (1 điểm): Định nghĩa một cấu trúc Tài liệu, bao gồm các trường thông tin như sau:
+    Mã tài liệu (kiểu số nguyên), Tên tài liệu (kiểu chuỗi ký tự), loại tài liệu (giáo trình, tài liệu báo cáo kỹ thuật,
+    tài liệu hướng dẫn sử dụng), Năm xuất bản (kiểu số nguyên), Nơi xuất bản (kiểu chuỗi ký tự).
+
+2. (4 điểm): Cài đặt một cấu trúc danh sách liên kết đôi, với các thao tác:
+    1) Khởi tạo danh sách; 2) Tạo mới một nút chứa dữ liệu; 3) Chèn nút vào cuối danh sách;
+    4) Sắp xếp danh sách; 5) Tìm kiếm nút trong danh sách; 6) Duyệt danh sách.
+
+3. (5 điểm): Xây dựng chương trình chính sử dụng các thao tác trên để:
+    - Tạo một danh sách liên kết đôi bao gồm n tài liệu (n bất kỳ).
+    - Hiển thị danh sách đã tạo ra màn hình.
+    - Sắp xếp danh sách theo mã tài liệu tăng dần.
+    - Chèn vào cuối danh sách một tài liệu mới (do người dùng nhập từ bàn phím), hiển thị danh sách sau khi chèn ra màn hình.
+---
+
+B13: Trên ngôn ngữ C/C++, viết chương trình thực hiện yêu cầu sau:
+
+1. (1 điểm): Định nghĩa một cấu trúc Mặt hàng, bao gồm các trường thông tin như sau:
+    Mã hàng (kiểu số nguyên), tên hàng (kiểu chuỗi ký tự), loại hàng (gia dụng, điện máy, tiêu dùng, mỹ phẩm),
+    năm sản xuất (kiểu số nguyên), xuất xứ (kiểu chuỗi ký tự), giá bán (kiểu số thực).
+
+2 (4 điểm): Cài đặt một cấu trúc danh sách liên kết đôi cho kiểu dữ liệu Mặt hàng, với các thao tác:
+    1) Khởi tạo danh sách; 2) Tạo mới một nút chứa dữ liệu; 3) Chèn nút vào cuối danh sách;
+    4) Xóa khỏi danh sách tất cả các mặt hàng cơ xuất sứ tại nước x (bất kỳ); 5) Duyệt danh sách.
+
+3. (5 điểm): Xây dựng chương trình chính, sử dụng các thao tác đã cài đặt để:
+    - Tạo một danh sách liên kết đôi gồm n mặt hàng (n bất kỳ).
+    - Hiển thị danh sách đã tạo ra màn hình.
+    - Liệt kê ra màn hình tất cả các mặt hàng “gia dụng” có giá bán từ 500.000 đến 1000.000 đồng.
+    - Xóa khỏi danh sách tất cả các mặt hàng có xuất sứ ở “Trung Quốc”.
+
+---
+
+B14: Trên ngôn ngữ C/C++, viết chương trình thực hiện yêu cầu sau:
+
+1. (1 điểm): Định nghĩa một cấu trúc Vé máy bay, bao gồm các trường thông tin như sau:
+    Mã vé (kiểu số nguyên), loại vé (hạng nhất, hạng thương gia, hạng phổ thông),
+    điểm khởi hành (chuỗi ký tự), điểm đến (kiểu chuối ký tự), giá vé (kiểu số thực).
+
+2. (4 điểm): Cài đặt một cấu trúc danh sách liên kết đơn cho kiểu dữ liệu Vé máy bay, với các thao tác:
+    1) Khởi tạo danh sách; 2) Tạo mới một nút chứa dữ liệu; 3) Chèn nút cuối danh sách; 4) Duyệt danh sách;
+
+3. (5 điểm): Xây dựng chương trình chính, sử dụng các thao tác đã cài đặt để:
+    - Tạo một danh sách liên kết đơn gồm n Vé máy bay (n bất kỳ).
+    - Hiển thị danh sách đã tạo ra màn hình.
+    - Sắp xếp danh sách theo giá vé tăng dần, hiển thị danh sách sau khi sắp ra màn hình.
+    - Liệt kê ra màn danh sách tất cả những Vé máy bay có điểm khởi hành là sân bay “Nội Bài”.
+
+---
+B16: Trên ngôn ngữ C/C++, viết chương trình thực hiện yêu cầu sau:
+
+1. (1 điểm): Định nghĩa một cấu trúc Dự án, gồm các trường thông tin như sau:
+    Mã dự án (kiểu số nguyên), Tên dự án (kiểu chuỗi ký tự),
+    Qui mô dự án (nhỏ, trung bình, lớn), Tổng kinh phí (kiểu số thực- đơn vị tính bằng tỷ đồng).
+
+2. (4 điểm): Cài đặt một cấu trúc danh sách liên kết đơn, với các thao tác cơ bản như khởi tạo danh sách,
+    Tạo mới một nút chứa dữ liệu, Chèn nút vào đầu danh sách, Xóa nút khỏi danh sách, Duyệt danh sách.
+
+3. (5 điểm): Xây dựng chương trình chính, sử dụng cấu trúc danh sách liên kết đơn và các thao tác đã cài đặt để:
+    - Nhập 1 danh sách gồm n dự án (n bất kỳ)
+    - Hiển thị danh sách đã nhập ra màn hình.
+    - Liệt kê ra màn hình những dự án những dự án có tổng kinh phí từ 5000-10.000 tỷ.
+    - Nhập vào một mã dự án bất kỳ, tìm kiếm xem mã dự án tương ứng đã được lưu trong danh sách hay chưa?
+    Nếu tìm thấy xóa dự án đó khỏi danh sách. Hiển thị lại danh sách sau khi xóa ra màn hình.
+
+---
+
+B17: Trên ngôn ngữ C/C++, viết chương trình thực hiện yêu cầu sau:
+
+1 (1 điểm): Định nghĩa một cấu trúc Công trình, gồm các trường thông tin như sau:
+    Mã công trình (kiểu số nguyên), Tên công trình (kiểu chuỗi ký tự), Qui mô công trình
+    (nhỏ, trung bình, lớn), Tổng kinh phí (kiểu số thực- đơn vị tính bằng tỷ đồng).
+
+2 (4 điểm): Cài đặt một cấu trúc danh sách liên kết đôi, với các thao tác cơ bản như khởi tạo danh sách,
+    Tạo mới một nút chứa dữ liệu, Chèn nút vào đầu danh sách, Xóa nút khỏi danh sách, Duyệt danh sách.
+
+3 (5 điểm): Xây dựng chương trình chính, sử dụng cấu trúc danh sách liên kết đơn và các thao tác đã cài đặt để:
+    - Nhập 1 danh sách gồm n Công trình (n bất kỳ)
+    - Hiển thị danh sách đã nhập ra màn hình.
+    - Liệt kê ra màn hình những Công trình những Công trình có tổng kinh phí từ 5000- 10.000 tỷ.
+    - Nhập vào một mã Công trình bất kỳ, tìm kiếm xem mã dự án tương ứng đã được lưu trong danh sách hay chưa?
+    Nếu tìm thấy xóa dự án đó khỏi danh sách. Hiển thị lại danh sách sau khi xóa ra màn hình.
+
+---
+
+B18: Trên ngôn ngữ C/C++, viết chương trình thực hiện yêu cầu sau:
+
+Khai báo cấu trúc date gồm các thông tin: ngày, tháng, năm.
+```cpp
+struct date {
+    int ngay, thang, nam;
+};
+```
+Khai báo cấu trúc Món ăn gồm các thông tin:
+Mã món ăn, tên món ăn, ngày sản xuất, hạn sử dụng, giá thành (đơn vị ngàn đồng).
+```cpp
+struct MonAn {
+    char ID[6];
+    char ten[100];
+    date ngay_sx;
+    int han_sd;
+    float gia;
+};
+```
+1. (2 điểm): Viết các hàm nhập vào từ bàn phím giá trị của một biến cấu trúc Món ăn, hiển thị lên màn hình.
+
+2. (4 điểm): Nhập vào 1 số nguyên dương n, sử dụng cấu trúc danh sách
+    (dùng cài đặt mảng – danh sách kề hoặc cài đặt con trỏ-danh sách liên kết),
+    nhập vào danh sách gồm n món ăn. Hiển thị danh sách lên màn hình.
+
+3. (3 điểm): Hiển thị lên màn hình thông tin đầy đủ của tất cả những món ăn được sản xuất vào ngày “05/10/2019”.
+
+4. (1 điểm): Chèn vào đầu danh sách một món ăn mới (do người dùng nhập từ bàn phím),
+    hiển thị danh sách sau khi chèn ra màn hình.
+
+---
+
+B19: Trên ngôn ngữ C/C++, viết chương trình thực hiện yêu cầu sau:
+
+1 (1 điểm): Định nghĩa một cấu trúc Cầu thủ bao gồm các trường thông tin như sau:
+    Mã cầu thủ (kiểu số nguyên), Tên cầu thủ (kiểu chuỗi ký tự), vị trí thi đấu (thủ môn,
+    tiền vệ, trung vệ, hậu vệ), tuổi (kiểu số nguyên), tiền thưởng (kiểu số thực – đơn vị tính
+    bằng triệu đồng).
+
+2. (4 điểm): Cài đặt một cấu trúc danh sách liên kết đơn, với các thao tác:
+    1) Khởi tạo danh sách; 2) Tạo mới một nút chứa dữ liệu; 3) Chèn nút vào cuối danh sách;
+    4) Tìm kiếm phần tử trong danh sách; 5) Sắp xếp danh sách; 6) Duyệt danh sách.
+
+3. (5 điểm): Chương trình chính: Sử dụng danh sách liên kết đơn và các thao tác đã tạo để:
+    - Nhập vào một danh sách liên kết đơn gồm n cầu thủ (n bất kỳ).
+    - Hiển thị danh sách đã nhập ra màn hình.
+    - Sắp xếp danh sách cầu thủ theo tuổi giảm dần, hiển thị danh sách đã sắp ra màn hình.
+    - Liệt kê ra màn hình danh sách những cầu thủ thi đấu ở vị trí “trung vệ”.
+
+---
+
+B20:
+Trên ngôn ngữ C/C++, viết chương trình thực hiện yêu cầu sau:
+1 (1 điểm): Định nghĩa một cấu trúc Vận động viên bao gồm các trường thông tin như
+sau: Mã Vận động viên (kiểu số nguyên), Tên Vận động viên (kiểu chuỗi ký tự), tuổi
+(kiểu số nguyên), Quê quán (kiểu chuỗi ký tự), Lương (kiểu float – đơn vị triệu đồng).
+2 (4 điểm): Cài đặt một cấu trúc danh sách liên kết đôi, với các thao tác: 1) Khởi tạo
+danh sách; 2) Tạo mới một nút chứa dữ liệu; 3) Chèn nút vào cuối danh sách; 4) Tìm
+kiếm phần tử trong danh sách; 5) Xóa nút trong danh sách; 6) Duyệt danh sách.
+3 (5 điểm): Chương trình chính: Sử dụng danh sách liên kết đôi và các thao tác trên để:
+- Nhập vào một danh sách gồm n Vận động viên (n bất kỳ).
+- Hiển thị danh sách đã nhập ra màn hình.
+- Liệt kê ra màn hình danh sách những Vận động viên quê ở “Nghệ An”.
+- Xóa khỏi danh sách tất cả những vận động viên đã hết tuổi thi đấu (từ 50 tuổi trở
+lên).
+
+---
+
+B21:
+Trên ngôn ngữ C/C++, viết chương trình thực hiện yêu cầu sau: Khai báo cấu trúc Môn
+học gồm các thông tin: Mã môn học, tên môn học, số tín chỉ, khoa quản lý, kỳ học.
+struct MonHoc
+{
+char ID[6];
+char ten[50];
+int so_tc;
+char khoa_ql;
+int hoc_ky;
+};
+1(2 điểm): Viết các hàm nhập vào từ bàn phím giá trị của một biến cấu trúc MonHoc, hiển thị
+lên màn hình.
+2 (4 điểm): Nhập vào 1 số nguyên dương n, sử dụng cấu trúc danh sách liên kết đôi, nhập vào
+danh sách gồm n môn học. Hiển thị danh sách lên màn hình.
+
+3 (3 điểm): Hiển thị lên màn hình thông tin đầy đủ của tất cả những môn học do khoa “Công
+nghệ Thông tin” quản lý.
+4 (1 điểm): Sắp xếp danh sách môn học theo học kỳ (tăng dần), hiển thị danh sách sau khi sắp
+ra màn hình.
+
+---
+
+B22:
+Trên ngôn ngữ C/C++, viết chương trình thực hiện yêu cầu sau: Khai báo cấu trúc date
+gồm các thông tin: ngày, tháng, năm.
+struct date
+{
+int ngay, thang, nam;
+};
+Khai báo cấu trúc Công nhân gồm các thông tin: Mã công nhân, tên công nhân, ngày sinh,
+quê quán, lương.
+struct CongNhan
+{
+char ID[6];
+char ten[50];
+date ngay_sinh;
+char que_quan[100];
+float luong;
+};
+1(2 điểm): Viết các hàm nhập vào từ bàn phím giá trị của một biến cấu trúc CongNhan, hiển
+thị lên màn hình.
+2 (4 điểm): Nhập vào 1 số nguyên dương n, sử dụng cấu trúc danh sách (dùng cài đặt mảng –
+danh sách kề hoặc cài đặt con trỏ-danh sách liên kết), nhập vào danh sách gồm n công nhân.
+Hiển thị danh sách lên màn hình.
+3 (3 điểm): Sắp xếp danh sách trên theo tên công nhân (thứ tự alphabet), hiển thị danh sách
+sau khi sắp ra màn hình.
+4 (1 điểm): Xóa khỏi danh sách tất cả những công nhân sinh trước năm 1960, hiển thị danh
+sách sau khi xóa lên màn hình.
+
+---
+
+B23:
+Trên ngôn ngữ C/C++, viết chương trình thực hiện yêu cầu sau: Khai báo cấu trúc Môn
+học gồm các thông tin: Mã môn học (int), tên môn học (chuỗi ký tự), số tín chỉ (int), học kỳ.
+struct MonHoc
+{
+char ID[6];
+char ten[50];
+int so_tc;
+int hoc_ky;
+};
+
+1(2 điểm): Viết các hàm nhập vào từ bàn phím giá trị của một biến cấu trúc MonHoc, hiển thị
+lên màn hình.
+2 (4 điểm): Nhập vào 1 số nguyên dương n, sử dụng cấu trúc danh sách liên kết đơn, nhập vào
+danh sách gồm n môn học. Hiển thị danh sách lên màn hình.
+3 (3 điểm): Hiển thị lên màn hình thông tin đầy đủ của tất cả những môn học thuộc học kỳ 2.
+4 (1 điểm): Sắp xếp danh sách môn học theo học kỳ (tăng dần), hiển thị danh sách sau khi sắp
+ra màn hình.
+
+---
+
+B24:
+Trên ngôn ngữ C/C++, viết chương trình thực hiện yêu cầu sau: Khai báo cấu trúc date
+gồm các thông tin: ngày, tháng, năm.
+struct date
+{
+int ngay, thang, nam;
+};
+Khai báo cấu trúc Nhân viên gồm các thông tin: Mã nhân viên, tên nhân viên, ngày sinh, quê
+quán, lương.
+struct CongNhan
+{
+char ID[6];
+char ten[50];
+date ngay_sinh;
+char que_quan[100];
+float luong;
+};
+1(2 điểm): Viết các hàm nhập vào từ bàn phím giá trị của một biến cấu trúc Nhân viên, hiển
+thị lên màn hình.
+2 (4 điểm): Nhập vào 1 số nguyên dương n, sử dụng cấu trúc danh sách liên kết đơn, nhập vào
+danh sách gồm n nhân viên. Hiển thị danh sách lên màn hình.
+3 (3 điểm): Sắp xếp danh sách trên theo lương tăng dần, hiển thị danh sách sau khi sắp ra màn
+hình.
+4 (1 điểm): Liệt kê ra màn hình danh sách tất cả những nhân viên sinh trước năm 1960, hiển
+thị danh sách sau khi xóa lên màn hình.
+
+---
+
+B25:
+Cho bảng điểm môn học của một lớp sinh viên. Mỗi sinh viên được ghi nhận bởi 3
+thông tin: Mã sinh viên (kiểu số nguyên) ; Điểm quá trình (kiểu số thực) ; Điểm thi
+(kiểu số thực).
+Trên ngôn ngữ C/C++, viết chương trình thực hiện yêu cầu sau:
+
+1 (1 điểm): Định nghĩa các kiểu dữ liệu mới nhằm phục vụ cho việc cài đặt bảng điểm
+của các sinh viên nói trên trong một danh sách liên kết đơn (mỗi sinh viên gồm thông
+tin về mã sv, điểm thi, điểm quá trình thiết lập một phần tử trong danh sách):
+- Định nghĩa Cấu trúc một phần tử của danh sách liên kết đơn
+- Định nghĩa Danh sách
+2 (4 điểm): Cài đặt các hàm để tạo và xử lý Danh sách liên kết đơn chứa thông tin
+bảng điểm:
+1) Khởi tạo danh sách
+2) Chèn nút mới vào đầu danh sách
+3) In danh sách điểm tổng kết ra màn hình bao gồm các thông tin: Mã sinh viên,
+điểm tổng kết
+4) Tìm giá trị điểm tổng kết cao nhất (Điểm tổng kết = Điểm quá trình*0.3+Điểm
+thi*0.7)
+5) Xóa phần tử có mã sinh viên là x cho trước nào đó
+3 (5 điểm): Viết chương trình chính: Sử dụng cấu trúc danh sách liên kết đơn và các
+hàm ở trên để:
+- Nhập vào một bảng điểm của lớp có n Sinh viên từ bàn phím.
+- In danh sách bảng điểm tổng kết của lớp
+- In ra thông tin của những sinh viên có điểm tổng kết cao nhất: Mã sinh viên, điểm
+quá trình, Điểm thi
+Nhập một số nguyên x từ bàn phím. Xóa sinh viên có mã sinh viên là x. In danh sách
+còn lại ra màn hình.
+
+---
+
+B26:
+Cho danh sách các máy gia công. Mỗi máy gia công được ghi nhận bởi 3 thông tin: Số
+hiệu máy (kiểu số nguyên) ; Năm sản xuất (kiểu số nguyên) ; Giá trị khấu hao (kiểu
+số thực).
+Trên ngôn ngữ C/C++, viết chương trình thực hiện yêu cầu sau:
+1 (1 điểm): Định nghĩa các kiểu dữ liệu mới nhằm phục vụ cho việc lưu thông tin của
+các máy gia công nói trên trong một danh sách liên kết đơn (mỗi máy gia công sẽ thiết
+lập tương ứng một phần tử trong danh sách:
+- Định nghĩa Cấu trúc một phần tử của danh sách liên kết đơn
+- Định nghĩa Danh sách
+2 (4 điểm): Cài đặt các hàm để tạo và xử lý Danh sách liên kết đơn chứa thông tin các
+máy gia công:
+
+1) Khởi tạo danh sách
+2) Chèn nút mới vào cuối danh sách
+3) In danh sách các máy ra màn hình
+4) Đếm số máy có khấu hao bằng 0
+5) Xóa máy có Giá trị khấu hao là x cho trước nào đó
+3 (5 điểm): Viết chương trình chính: Sử dụng cấu trúc danh sách liên kết đơn và các
+hàm ở trên để:
+- Nhập vào một danh sách có n máy gia công từ bàn phím.
+- In danh sách các máy vừa nhập ra màn hình
+- In ra số lượng các máy đã hết giá trị khấu hao (giá trị khấu hao bằng 0)
+- Xóa các máy gia công hết giá trị khấu hao. In danh sách còn lại ra màn hình.
+
+---
+
+B27: Cho bảng điểm môn học của một lớp sinh viên. Mỗi sinh viên được ghi nhận bởi 2
+thông tin: Mã sinh viên (kiểu số nguyên) ; Điểm kết thúc học phần (kiểu số thực).
+Trên ngôn ngữ C/C++, viết chương trình thực hiện yêu cầu sau:
+1. (1 điểm): Định nghĩa các kiểu dữ liệu mới nhằm phục vụ cho việc cài đặt bảng điểm
+của các sinh viên nói trên trong một danh sách liên kết đôi (mỗi sinh viên gồm thông
+tin về mã sv, điểm kết thúc môn học thiết lập một phần tử trong danh sách):
+- Định nghĩa Cấu trúc một phần tử của danh sách liên kết đôi
+- Định nghĩa Danh sách
+2. (4 điểm): Cài đặt các hàm để tạo và xử lý Danh sách liên kết đôi chứa thông tin bảng điểm:
+1) Khởi tạo danh sách
+2) Chèn nút mới vào đầu danh sách
+3) Đếm số sinh viên đạt điểm từ 9 trở lên
+4) Xóa phần tử có mã sinh viên là x cho trước nào đó
+5) In danh sách điểm ra màn hình
+3 (5 điểm): Viết chương trình chính: Sử dụng cấu trúc danh sách liên kết đôi và các
+hàm ở trên để:
+- Nhập vào một bảng điểm của lớp có n Sinh viên từ bàn phím.
+- In danh sách bảng điểm của lớp
+- In ra số lượng sinh viên có điểm thi từ 9 trở lên
+- Nhập một số nguyên x từ bàn phím. Xóa sinh viên có mã sinh viên là x. In danh sách
+còn lại ra màn hình.
+
+---
+
+B28: Cho danh sách các máy gia công. Mỗi máy gia công được ghi nhận bởi 3 thông tin:
+Số hiệu máy (kiểu số nguyên) ; Năm sản xuất (kiểu số nguyên) ; Giá trị khấu hao (kiểu số thực).
+Trên ngôn ngữ C/C++, viết chương trình thực hiện yêu cầu sau:
+
+1. (1 điểm): Định nghĩa các kiểu dữ liệu mới nhằm phục vụ cho việc lưu thông tin của
+    các máy gia công nói trên trong một danh sách liên kết đôi (mỗi máy gia công sẽ thiết
+    lập tương ứng một phần tử trong danh sách:
+    - Định nghĩa Cấu trúc một phần tử của danh sách liên kết đôi
+    - Định nghĩa Danh sách
+2. (4 điểm): Cài đặt các hàm để tạo và xử lý Danh sách liên kết đôi chứa thông tin các máy gia công:
+    1) Khởi tạo danh sách
+    2) Chèn nút mới vào đầu danh sách
+    3) In danh sách các máy ra màn hình
+    4) Kiểm tra sự tồn tại của một máy với năm sản xuất cho trước
+    5) Xóa phần tử có số hiệu máy là x cho trước
+3 (5 điểm): Viết chương trình chính: Sử dụng cấu trúc danh sách liên kết đôi và các
+hàm ở trên để:
+    - Nhập vào một danh sách có n máy gia công từ bàn phím.
+    - In danh sách các máy vừa nhập ra màn hình
+    - Nhập một số hiệu máy từ bàn phím, tìm xem máy đó có tồn tại trong danh sách không?
+    Nếu có thì in thông tin máy ra màn hình
+    - Nhập một số hiệu máy từ bàn phím, tìm xem máy đó có tồn tại trong danh sách không?
+    Nếu có thì xóa máy đó khỏi danh sách. In danh sách còn lại ra màn hình
+
+---

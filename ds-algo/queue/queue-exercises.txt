@@ -1,0 +1,111 @@
+B06: Trên ngôn ngữ C/C++, viết chương trình thực hiện yêu cầu sau:
+
+Khai báo cấu trúc date gồm các thông tin: ngày, tháng, năm.
+```cpp
+struct date {
+    int ngay, thang, nam;
+};
+```
+Khai báo cấu trúc hàng hóa cần bốc xếp trên băng chuyền bao gồm các thông tin:
+Mã hàng hóa, tên hàng hóa, ngày xuất hàng, giá xuất hàng đi (đơn vị triệu đồng):
+```cpp
+struct hang {
+    char ID[6];
+    char ten[256];
+    date ngay_xuat;
+    float gia_xuat;
+};
+```
+
+1. (2 điểm):
+    Viết các hàm nhập vào từ bàn phím giá trị của một biến cấu trúc hàng hóa, hiển thị lên màn hình.
+
+2. (4 điểm):
+    Nhập vào 1 số nguyên dương n, sử dụng cấu trúc dữ liệu hàng đợi (queue) nhập vào băng chuyền gồm n hàng hóa cần bốc xếp.
+
+3. (2 điểm):
+    Hiển thị lên màn hình thông tin tất cả các hàng hóa trong hàng đợi có mã hàng hóa (trường ID) là “001”.
+
+4. (2 điểm):
+    Hiển thị lên màn hình thông tin hàng hóa đã bốc xếp (hiện tại băng chuyền đã rỗng).
+
+---
+
+
+B15: Trên ngôn ngữ C/C++, viết chương trình thực hiện yêu cầu sau:
+
+1. (1 điểm): Định nghĩa một cấu trúc Phân số bao gồm các trường thông tin như sau:
+    tử số (kiểu số nguyên), mẫu số (kiểu số nguyên).
+
+2 (5 điểm): Cài đặt một cấu trúc hàng đợi bằng danh sách liên kết, với các thao tác:
+    1) Khởi tạo hàng đợi; 2) Kiểm tra hàng đợi rỗng;
+    4) Đưa một phần tử vào hàng đợi; 5) Lấy một phần tử ra khỏi hàng đợi.
+
+3 (4 điểm): Xây dựng chương trình chính để, sử dụng cấu trúc hàng đợi và các thao tác đã cài đặt trên hàng đợi để:
+    - Đưa vào hàng đợi n phân số bất kỳ (được nhập từ bàn phím).
+    - Hiển thị các phân số đã lưu trong hàng đợi và tổng của chúng ra màn hình.
+
+---
+
+B32: Cài đặt một cấu trúc hàng đợi, với các thao tác:
+1) Khởi tạo hàng đợi; 2) Kiểm tra hàng đợi rỗng; 3) Kiểm tra hàng đợi đầy;
+4) Đưa một phần tử vào hàng đợi; 5) Lấy một phần tử ra khỏi hàng đợi (5 điểm).
+
+- Chương trình chính: Sử dụng các thao tác đã cài đặt để:
++ Nhập vào một số nguyên dương N bất kỳ
++ Sử dụng cấu trúc hàng đợi để tính tổng các chữ số của N (5 điểm).
+Ví dụ: N = 1996 => Tổng = 1 + 9 + 9 + 6 = 25.
+
+==========================================
+Dạng bài nhận biết stack/queue
+==========================================
+
+B34: Viết chương trình quản lý xếp hàng trong siêu thị. Người mua xếp hàng theo thứ tự,
+người xếp trước sẽ được phục vụ trước. Thông tin người mua bao gồm: Họ tên, số cmnd,
+số tiền cần thanh toán. Chương trình cần:
+
+    1) Thêm một người vào hàng
+    2) Thêm n người vào hàng
+    3) Phục vụ một người trong hàng (phục vụ người đầu tiên trong hàng)
+    4) Xem thông tin người mới xếp hàng
+    5) Xem thông tin người chuẩn bị được phục vụ
+    6) Xem thông tin tất cả người xếp hàng
+
+---
+
+B35: Viết chương trình quản lý xếp hàng của sinh viên trong thư viện. Sinh viên xếp hàng
+theo thứ tự, người xếp trước sẽ được phục vụ trước. Thông tin sinh viên bao gồm: Họ
+tên, mã sinh viên, lớp. Chương trình cần:
+
+    1) Thêm một sinh viên vào hàng
+    2) Thêm n sinh viên vào hàng
+    3) Phục vụ một sinh viên trong hàng (phục vụ sinh viên đầu tiên trong hàng)
+    4) Xem thông tin sinh viên mới xếp hàng
+    5) Xem thông tin sinh viên chuẩn bị được phục vụ
+    6) Xem thông tin tất cả sinh viên trong hàng
+
+---
+
+B36: Viết chương trình quản lý xếp hàng check in lên máy bay. Hành khách xếp hàng theo
+thứ tự, người xếp trước sẽ được check in trước. Thông tin hành khách bao gồm: Họ
+tên, mã vé, số lượng hành lý, khối lượng hành lý. Chương trình cần:
+
+    1) Thêm một hành khách vào hàng
+    2) Thêm n hành khách vào hàng
+    3) Phục vụ một hành khách trong hàng (phục vụ hành khách đầu tiên trong hàng)
+    4) Xem thông tin hành khách mới xếp hàng
+    5) Xem thông tin hành khách chuẩn bị được check in
+    6) Xem thông tin tất cả hành khách trong hàng
+
+---
+
+B37: Viết chương trình quản lý xếp hàng lấy phiếu khám bệnh. Bệnh nhân xếp hàng theo
+thứ tự, người xếp trước sẽ được lấy phiếu trước trước. Thông tin bệnh nhân bao gồm:
+Họ tên, quê quán, tuổi, bệnh định chữa. Chương trình cần:
+
+    1) Thêm một bệnh nhân vào hàng
+    2) Thêm n bệnh nhân vào hàng
+    3) Phục vụ một bệnh nhân trong hàng (phục vụ bệnh nhân đầu tiên trong hàng)
+    4) Xem thông tin bệnh nhân mới xếp hàng
+    5) Xem thông tin bệnh nhân chuẩn bị được lấy phiếu
+    6) Xem thông tin tất cả bệnh nhân trong hàng

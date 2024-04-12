@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include <thread>
 
 inline uintptr_t AlignAddress(uintptr_t addr, size_t align) {
     const size_t mask = align - 1;
@@ -25,7 +25,7 @@ int main(void)
 {
     void *p;
     for (int i = 0; i < 1000; ++i) {
-        p = malloc(213);
+        p = malloc(1 + i);
         printf("%p\n", p);
     }
 }
