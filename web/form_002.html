@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <style>
+            td {
+                width: 6.7em;
+            }
+            body {
+                text-align: center;
+            }
+            form {
+                display: inline-block;
+            }
+            input[type=text], input[type=password] {
+                width: 250px;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="#">
+            <br>
+            <big style="font-size: 24px;"> Novell Services Login </big>
+            <br>
+            <br>
+            <table>
+                <tr><td>Username:</td><td><input type="text"></td></tr>
+                <tr><td>Password:</td><td><input type="password"></td></tr>
+                <tr><td>City of Employment:</td> <td><input type="text"></td></tr>
+                <tr>
+                    <td>Web server:</td>
+                    <td>
+                        <select>
+                            <option value="">--- Choose a server ---</option>
+                        </select>
+                    </td>
+                </tr>
+            </table >
+            <br>
+            <table>
+                    <tr>
+                    <td>Please specify your role:</td>
+                    <td>
+                        <input type="radio" id="role_admin" name="role">
+                        <label for="role_admin">Admin</label><br>
+                        <input type="radio" id="role_engineer" name="role">
+                        <label for="role_engineer">Engineer</label><br>
+                        <input type="radio" id="role_manager" name="role">
+                        <label for="role_manager">Manager</label><br>
+                        <input type="radio" id="role_guest" name="role">
+                        <label for="role_guest">Guest</label>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <table>
+                <tr>
+                    <td>Single Sign-on to the following:</td>
+                    <td>
+                        <input type="checkbox"><label>Mail</label><br>
+                        <input type="checkbox"><label>Payroll</label><br>
+                        <input type="checkbox"><label>Self-service</label><br>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <input type="submit" value="Login">
+            <input type="reset" value="Reset"        </form>
+    </body>
+</html>

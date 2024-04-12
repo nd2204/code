@@ -5,17 +5,16 @@ import sys
 
 from EPU import EPULoginPage, webdriver
 
-CalendarSite    = "http://sinhvien.epu.edu.vn/LichHocLichThiTuan.aspx"
 options = webdriver.ChromeOptions()
 options.binary_location = "/usr/bin/"
+# options.add_argument('headless')
 
+browser = webdriver.getd
 
 if __name__ == "__main__":
-
     if len(sys.argv) < 2:
         print("Missing argument")
         exit(1)
-
     try:
         with open(".cred", "r") as file:
             usr_id = file.readline().strip()
