@@ -1,0 +1,82 @@
+B29: Cài đặt một cấu trúc ngăn xếp bằng mảng, với các thao tác:
+1) Khởi tạo ngăn xếp; 2) Kiểm tra ngăn xếp rỗng; 3) Kiểm tra ngăn xếp đầy;
+4) Đưa một phần tử vào ngăn xếp, 5) lấy một phần tử ra khỏi ngăn xếp.
+
+- Chương trình chính: Sử dụng các thao tác đã cài đặt để:
++ Nhập vào một số nguyên dương N bất kỳ, sử dụng cấu trúc ngăn xếp để in ra
+biểu diễn nhị phân của N.
+
+Ví dụ: N = 11 => Biểu diễn nhị phân: 1011
+
+---
+
+B30: Cài đặt một cấu trúc ngăn xếp bằng mảng, với các thao tác:
+1) Khởi tạo ngăn xếp; 2) Kiểm tra ngăn xếp rỗng; 3) Kiểm tra ngăn xếp đầy;
+4) Đưa một phần tử vào ngăn xếp, 5) lấy một phần tử ra khỏi ngăn xếp.
+
+- Chương trình chính: Sử dụng các thao tác đã cài đặt để:
++ Nhập vào một số nguyên dương N bất kỳ (hệ cơ số 10), sử dụng cấu trúc ngăn
+xếp để in ra giá trị ở hệ cơ số 8 của N ra màn hình:
+Ví dụ: n = 104210 => 20228
+
+---
+
+B31: Cài đặt một cấu trúc ngăn xếp bằng mảng, với các thao tác: 1) Khởi tạo ngăn xếp; 2)
+Kiểm tra ngăn xếp rỗng; 3) Kiểm tra ngăn xếp đầy; 4) Đưa một phần tử vào ngăn xếp, dấu ngoặc đơn
+
+Ví dụ 1: (()()()()) là hợp lệ
+Ví dụ 1: (())()()) là không hợp lệ
+
+==========================================
+Dạng bài nhận biết stack/queue
+==========================================
+
+B34: Viết chương trình quản lý xếp hàng trong siêu thị. Người mua xếp hàng theo thứ tự,
+người xếp trước sẽ được phục vụ trước. Thông tin người mua bao gồm: Họ tên, số cmnd,
+số tiền cần thanh toán. Chương trình cần:
+
+    1) Thêm một người vào hàng
+    2) Thêm n người vào hàng
+    3) Phục vụ một người trong hàng (phục vụ người đầu tiên trong hàng)
+    4) Xem thông tin người mới xếp hàng
+    5) Xem thông tin người chuẩn bị được phục vụ
+    6) Xem thông tin tất cả người xếp hàng
+
+---
+
+B35: Viết chương trình quản lý xếp hàng của sinh viên trong thư viện. Sinh viên xếp hàng
+theo thứ tự, người xếp trước sẽ được phục vụ trước. Thông tin sinh viên bao gồm: Họ
+tên, mã sinh viên, lớp. Chương trình cần:
+
+    1) Thêm một sinh viên vào hàng
+    2) Thêm n sinh viên vào hàng
+    3) Phục vụ một sinh viên trong hàng (phục vụ sinh viên đầu tiên trong hàng)
+    4) Xem thông tin sinh viên mới xếp hàng
+    5) Xem thông tin sinh viên chuẩn bị được phục vụ
+    6) Xem thông tin tất cả sinh viên trong hàng
+
+---
+
+B36: Viết chương trình quản lý xếp hàng check in lên máy bay. Hành khách xếp hàng theo
+thứ tự, người xếp trước sẽ được check in trước. Thông tin hành khách bao gồm: Họ
+tên, mã vé, số lượng hành lý, khối lượng hành lý. Chương trình cần:
+
+    1) Thêm một hành khách vào hàng
+    2) Thêm n hành khách vào hàng
+    3) Phục vụ một hành khách trong hàng (phục vụ hành khách đầu tiên trong hàng)
+    4) Xem thông tin hành khách mới xếp hàng
+    5) Xem thông tin hành khách chuẩn bị được check in
+    6) Xem thông tin tất cả hành khách trong hàng
+
+---
+
+B37: Viết chương trình quản lý xếp hàng lấy phiếu khám bệnh. Bệnh nhân xếp hàng theo
+thứ tự, người xếp trước sẽ được lấy phiếu trước trước. Thông tin bệnh nhân bao gồm:
+Họ tên, quê quán, tuổi, bệnh định chữa. Chương trình cần:
+
+    1) Thêm một bệnh nhân vào hàng
+    2) Thêm n bệnh nhân vào hàng
+    3) Phục vụ một bệnh nhân trong hàng (phục vụ bệnh nhân đầu tiên trong hàng)
+    4) Xem thông tin bệnh nhân mới xếp hàng
+    5) Xem thông tin bệnh nhân chuẩn bị được lấy phiếu
+    6) Xem thông tin tất cả bệnh nhân trong hàng
