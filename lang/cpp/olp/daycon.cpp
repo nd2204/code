@@ -15,11 +15,11 @@ int main() {
     }
 
     int best = 0, left = 0, right = 0;
-    unordered_set<int> map;
+    unordered_set<int> s;
     for (; right < N; ++right) {
-        map.insert(arr[right]);
-        while (map.size() > (unsigned int) M) {
-            map.erase(arr[left]);
+        s.insert(arr[right]);
+        while (s.size() > (unsigned int) M) {
+            s.erase(arr[left]);
             left++;
         }
         best = max(best, right - left + 1);
