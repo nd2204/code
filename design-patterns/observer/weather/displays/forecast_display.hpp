@@ -1,6 +1,6 @@
 #pragma once
 
-#include "weatherdata.hpp"
+#include "../weatherdata.hpp"
 #include "display_element.hpp"
 
 class ForecastDisplay : public Observer, public DisplayElement {

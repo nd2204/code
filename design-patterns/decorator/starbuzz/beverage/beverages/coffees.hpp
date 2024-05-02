@@ -3,18 +3,44 @@
 #include "../beverage.hpp"
 
 namespace zu4 {
-class HouseBlend : public Beverage {
-public:
-  HouseBlend();
-  double cost();
-};
+  class HouseBlend : public Beverage {
+  public:
+    HouseBlend();
+    double cost();
+    ~HouseBlend();
+  };
 
-class DarkRoast : public Beverage {
-public:
-  DarkRoast();
+  class DarkRoast : public Beverage {
+  public:
+    static int i;
+    DarkRoast();
+    template<typename T>
+    T cost();
+    virtual void update() = 0;
+  };
+  void update();
+}
+
+namespace dn200 {
   template<typename T>
-  double cost();
-};
+  class HouseBlend : public Beverage {
+  public:
+    HouseBlend();
+    T cost();
+    ~HouseBlend();
+  };
+
+  class DarkRoast : public Beverage {
+  public:
+    DarkRoast();
+    template<typename T>
+    T cost();
+    virtual void update() = 0;
+    bool operator>(DarkRoast& rhs);
+    friend bool operator>(DarkRoast& lhs, DarkRoast& rhs);
+  };
+  void update();
+}
 
 class Decaf : public Beverage {
 public:
@@ -27,4 +53,8 @@ public:
   Expresso();
   double cost();
 };
-}
+
+int i = 0;
+static void update();
+
+Expresso new();

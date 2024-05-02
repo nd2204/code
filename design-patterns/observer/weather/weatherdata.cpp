@@ -1,5 +1,11 @@
 #include "weatherdata.hpp"
 
+WeatherData::WeatherData() {
+    temperature = 0.0f;
+    humidity = 0.0f;
+    pressure = 0.0f;
+}
+
 void WeatherData::registerObserver(Observer* o) { observers.insert(o); }
 void WeatherData::removeObserver(Observer* o) { observers.erase(o); }
 

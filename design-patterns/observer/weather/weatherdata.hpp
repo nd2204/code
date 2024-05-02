@@ -1,11 +1,12 @@
 #pragma once
 
 #include "observer.hpp"
-#include "subject.hpp"
+#include "observable.hpp"
 #include <unordered_set>
 
-class WeatherData: public Subject {
+class WeatherData: public Observable {
 public:
+  WeatherData();
   void registerObserver(Observer*);
   void removeObserver(Observer*);
   void notifyObservers();
@@ -15,7 +16,6 @@ public:
   void setMeasurements(float temperature, float humidity, float pressure);
   void measurementsChanged();
 private:
-  std::unordered_set<Observer*> observers;
   float temperature;
   float humidity;
   float pressure;

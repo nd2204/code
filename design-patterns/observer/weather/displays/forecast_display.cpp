@@ -15,6 +15,7 @@ void ForecastDisplay::update(float temperature, float humidity, float pressure) 
 }
 
 void ForecastDisplay::display() {
+  std::cout << "FORECAST: ";
   if (currentPressure > lastPressure) {
     std::cout << "Improving weather on the way!\n";
   }

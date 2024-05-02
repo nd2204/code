@@ -5,8 +5,10 @@ StatisticDisplay::StatisticDisplay(WeatherData* wd) {
   if (wd) {
     this->weatherData = wd;
     weatherData->registerObserver(this);
-    maxTemp = minTemp = weatherData->getTemperature();
+    maxTemp = -200;
+    minTemp = 200;
     numReadings = 0;
+    tempSum = 0;
   }
 }
 
@@ -19,5 +21,5 @@ void StatisticDisplay::update(float temperature, float humidity, float pressure)
 
 void StatisticDisplay::display() {
   std::cout << "AVG/MAX/MIN temperature = "
-    << tempSum/numReadings << '/' << maxTemp << '\n' << minTemp << "\n";
+    << tempSum/numReadings << '/' << maxTemp << '/' << minTemp << "\n";
 }
