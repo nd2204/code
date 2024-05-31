@@ -22,7 +22,7 @@ namespace zu4 {
 }
 
 namespace dn200 {
-  template<typename T>
+  template<typename T, class U, class V = int>
   class HouseBlend : public Beverage {
   public:
     HouseBlend();
@@ -33,7 +33,7 @@ namespace dn200 {
   class DarkRoast : public Beverage {
   public:
     DarkRoast();
-    template<typename T>
+    template<typename , class U, class V = int>
     T cost();
     virtual void update() = 0;
     bool operator>(DarkRoast& rhs);
