@@ -1,96 +1,110 @@
 #include <iostream>
-#include <limits.h>
-#include <memory.h>
 #include <cstring>
+#include <memory.h>
+
+#define MAX 1000000
+#define MAX_NODE 50
+#define CMAP(x) (char)((x) + 'A')
+
+// Vertex count
+int n;
+
+// Node Tags
+int pre[MAX_NODE];
+int dst[MAX_NODE];
+
+// Path Data
+int mat[MAX_NODE][MAX_NODE];
+
+// Keep track of visited node
+bool visited[MAX_NODE];
 
 using namespace std;
 
-#define MAX_NODE_COUNT 50
-/* #define INT_MAX 1000000; */
-#define CMAP(c) (char)((c) + 'A')
-
-int n, s, t;
-
-int found[MAX_NODE_COUNT];
-int dist[MAX_NODE_COUNT];
-int mat[MAX_NODE_COUNT][MAX_NODE_COUNT];
-bool visited[MAX_NODE_COUNT];
-
 void nhap() {
   FILE* f = freopen("dijkstra_input.txt", "r", stdin);
+  if (!f) {
+    exit(-1);
+  }
   cin >> n;
-  cout << "So dinh: " << n << endl;
-  cin >> s >> t;
+  printf("So dinh: %d\n", n);
   for (int i = 0; i < n; i++) {
     for (int j = 0; j < n; j++) {
       cin >> mat[i][j];
-      if (mat[i][j] == 0) mat[i][j] = INT_MAX;
+      if (mat[i][j] == 0) mat[i][j] = MAX;
     }
   }
   fclose(f);
 }
 
 void xuat() {
-  cout << "Do thi vua nhap la:\n";
-  cout << "- So dinh cua do thi: " << n << endl;
-  cout << "- Ma tran trong so cua do thi:\n";
-  for (int i = 0; i < n; ++i) {
-    for (int j = 0; j < n; ++j) {
-      cout << mat[i][j] << "\t";
+  printf("Thong tin do thi vua nhap:\n");
+  printf("- So dinh: %d\n", n);
+  printf("- Ma tran trong so cua do thi:\n");
+
+  for (int i = 0; i < n; i++) {
+    printf("  ");
+    for (int j = 0; j < n; j++) {
+      printf("%7d ", mat[i][j]);
     }
-    cout << "\n";
+    printf("\n");
   }
-}
-
-void show_path() {
-  const int end = t;
-  cout << "Duong di ngan nhat tu " << CMAP(s) << " den " << CMAP(t) << " la\n";
-  cout << CMAP(end) << "<=";
-
-  int i = found[end];
-
-  while (i != s) {
-    cout << CMAP(i) << "<=";
-    i = found[i];
-  }
-
-  cout << CMAP(s) << "\n";
-  cout << "Do dai duong di la: " << dist[end];
 }
 
 bool isAllVisited() {
-  for (int i = 0; i < n; ++i) {
+  for (int i = 0; i < n; i++) {
     if (!visited[i]) return false;
   }
   return true;
 }
 
-void dijkstra() {
-  int u, minp;
+// Print path from end to start
+void show_path(int src, int tar) {
+  printf("Duong di ngan nhat tu %c den %c la:\n", CMAP(src), CMAP(tar));
+  int p = pre[tar];
+  printf("%c <-%d- ", CMAP(tar), mat[tar][p]);
+
+  while (p != src) {
+    printf("%c <-%d- ", CMAP(p), mat[p][pre[p]]);
+    p = pre[p];
+  }
+
+  printf("%c\n", CMAP(src));
+  printf("Do dai duong di la: %d\n", dst[tar]);
+}
+
+void dijkstra(int src, int tar) {
+  // Init Graph Tags
+  // 1. init the distance of the src to other vert
   for (int v = 0; v < n; v++) {
-    dist[v] = mat[s][v];
-    found[v] = s;
+    dst[v] = mat[src][v]; // or mat[v][src] but current is more cache friendly
+    pre[v] = src;
     visited[v] = false;
   }
-  dist[s] = 0;
-  found[s] = -1;
-  visited[s] = true;
+  // 2. init src vert tags
+  dst[src] = 0;
+  pre[src] = -1;
+  visited[src] = true;
 
+  // 3. main loop for visiting every node and update their tags
+  int minp, u;
   while (!isAllVisited()) {
-    minp = INT_MAX;
-    // Find cheapest next node
-    for (int v = 0; v < n; v++) {
-      if ((!visited[v]) && (dist[v] < minp)) {
+    if (visited[tar]) break;
+    minp = MAX;
+    // 3.1 find cheapest next node as u
+    for ( int v = 0; v < n; ++v ) {
+      if ( (!visited[v]) && (dst[v] < minp) ) {
         u = v;
-        minp = dist[v];
+        minp = dst[v];
       }
     }
     visited[u] = true;
 
-    for (int v = 0; v < n; v++) {
-      if ((!visited[v]) && (dist[u] + mat[u][v] < dist[v])) {
-        dist[v] = dist[u] + mat[u][v];
-        found[v] = u;
+    // 3.2 update the distance to the remaining univisited node from u
+    for (int v = 0; v < n; ++v) {
+      if ( (!visited[v]) && (dst[u] + mat[u][v] < dst[v]) ) {
+        dst[v] = dst[u] + mat[u][v];
+        pre[v] = u;
       }
     }
   }
@@ -99,6 +113,6 @@ void dijkstra() {
 int main() {
   nhap();
   xuat();
-  dijkstra();
-  show_path();
+  dijkstra(0, n-1);
+  show_path(0, n-1);
 }

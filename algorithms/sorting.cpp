@@ -114,6 +114,7 @@ void quickSort(TaiLieu arr[], int left, int right) {
   if (l < right) quickSort(arr, l, right);
 }
 
+// bsearch
 int binarySearch(float gia, TaiLieu arr[], int n) {
   int left = 0;
   int right = n - 1;
