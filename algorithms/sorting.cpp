@@ -157,6 +157,7 @@ void searchAll(float gia, TaiLieu arr[], int n) {
     }
   }
 }
+
 // Câu 4. (2 -) Sử dụng phương pháp sắp xếp chèn trực tiếp(inserttion sort), viết hàm sắp xếp các
 // tài liệu theo chiều tăng dần của giá bán
 // Câu 5. (1.5 -). Áp dụng chiến lược chia để trị (bằng thuật toán tìm kiếm nhị phân). Viết hàm tìm
